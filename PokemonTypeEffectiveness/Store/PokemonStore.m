@@ -19,17 +19,27 @@
                                                encoding:NSUTF8StringEncoding
                                                   error:nil];
     self.pokemonTypeMap =
-            [NSJSONSerialization JSONObjectWithData: [data dataUsingEncoding:NSUTF8StringEncoding]
-                                            options: NSJSONReadingMutableContainers
-                                              error: nil];
+            [NSJSONSerialization JSONObjectWithData:[data dataUsingEncoding:NSUTF8StringEncoding]
+                                            options:NSJSONReadingMutableContainers
+                                              error:nil];
 }
 
 - (NSArray *)typesFor:(NSString *)pokemonName {
     return self.pokemonTypeMap[pokemonName];
 }
 
-- (NSArray *)pokemonNames {
+- (NSArray *)names {
     return [[self.pokemonTypeMap allKeys] sortedArrayUsingSelector:@selector(compare:)];
+}
+
+- (NSArray *)namesMatching:(NSString *)filter {
+    if (filter.length == 0) {
+        return [self names];
+    }
+
+    return [[self names] filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(NSString *name, NSDictionary *bindings) {
+        return [name rangeOfString:filter].location != NSNotFound;
+    }]];
 }
 
 @end

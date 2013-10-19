@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kX6-h3-uvY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ihy-Or-JcP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="MVJ-ct-yRH">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="Ihy-Or-JcP" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UN7-wz-Sj0">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kX6-h3-uvY" kind="relationship" relationship="rootViewController" id="42J-rT-4ye"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gT0-sg-CfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="45"/>
+        </scene>
+        <!--Pokemon List View Controller-->
         <scene sceneID="Y46-RY-Ha2">
             <objects>
-                <tableViewController id="kX6-h3-uvY" sceneMemberID="viewController">
+                <tableViewController id="kX6-h3-uvY" customClass="PokemonListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="a5t-aV-G9S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,8 +51,10 @@
                             <outlet property="delegate" destination="kX6-h3-uvY" id="zkb-TD-dGm"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="25i-1M-ojo"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="uZE-mm-ga3" id="cpS-Lv-tr2"/>
+                        <outlet property="searchBar" destination="ViC-YV-MCp" id="fVN-Oc-Fw7"/>
+                        <outlet property="searchDisplayController" destination="BAw-8V-wA8" id="bEG-9I-j8o"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBt-ar-RJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,6 +65,14 @@
                         <outlet property="searchContentsController" destination="kX6-h3-uvY" id="t4Y-5O-8eX"/>
                         <outlet property="searchResultsDataSource" destination="kX6-h3-uvY" id="5Kc-de-T8R"/>
                         <outlet property="searchResultsDelegate" destination="kX6-h3-uvY" id="FNU-YJ-b9u"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="BAw-8V-wA8">
+                    <connections>
+                        <outlet property="delegate" destination="kX6-h3-uvY" id="eTV-ii-Cn2"/>
+                        <outlet property="searchContentsController" destination="kX6-h3-uvY" id="D4C-ZI-kts"/>
+                        <outlet property="searchResultsDataSource" destination="kX6-h3-uvY" id="wEp-vV-m94"/>
+                        <outlet property="searchResultsDelegate" destination="kX6-h3-uvY" id="297-yv-w9h"/>
                     </connections>
                 </searchDisplayController>
             </objects>

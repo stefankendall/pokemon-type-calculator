@@ -5,7 +5,9 @@
 
 - (NSArray *)typesFor:(NSString *)pokemonName;
 
-- (NSArray *)pokemonNames;
+- (NSArray *)names;
 
 @property(nonatomic, strong) NSDictionary *pokemonTypeMap;
+
+- (NSArray *)namesMatching:(NSString *)name;
 @end
