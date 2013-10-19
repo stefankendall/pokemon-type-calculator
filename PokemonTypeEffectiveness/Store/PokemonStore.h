@@ -3,5 +3,7 @@
 
 - (void)load;
 
-- (NSDictionary *)pokemonTypeMap;
+- (NSArray *) typesFor: (NSString *) pokemonName;
+
+@property(nonatomic, strong) NSDictionary *pokemonTypeMap;
 @end

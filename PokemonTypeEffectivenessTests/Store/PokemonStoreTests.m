@@ -5,8 +5,11 @@
 
 -(void) testLoadsPokemonDataFromFile {
     [[PokemonStore instance] load];
-    NSDictionary *data = [[PokemonStore instance] pokemonTypeMap];
-    XCTAssertEqual([data count], 649U);
+    NSDictionary *data = [PokemonStore instance].pokemonTypeMap;
+    XCTAssertEqual([data count], (NSUInteger)649);
+
+    NSArray *types = @[@"fire", @"flying"];
+    XCTAssertEqualObjects(types, [[PokemonStore instance] typesFor: @"Charizard"]);
 }
 
 @end

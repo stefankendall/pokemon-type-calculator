@@ -15,14 +15,17 @@
 
 - (void)load {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"pokemon" ofType:@"json"];
-    NSError *error = nil;
     NSString *data = [NSString stringWithContentsOfFile:path
                                                encoding:NSUTF8StringEncoding
-                                                  error:&error];
-    NSLog(@"%@", data);
+                                                  error:nil];
+    self.pokemonTypeMap =
+            [NSJSONSerialization JSONObjectWithData: [data dataUsingEncoding:NSUTF8StringEncoding]
+                                            options: NSJSONReadingMutableContainers
+                                              error: nil];
 }
 
-- (NSDictionary *)pokemonTypeMap {
-    return nil;
+- (NSArray *)typesFor:(NSString *)pokemonName {
+    return self.pokemonTypeMap[pokemonName];
 }
+
 @end
