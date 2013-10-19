@@ -28,4 +28,8 @@
     return self.pokemonTypeMap[pokemonName];
 }
 
+- (NSArray *)pokemonNames {
+    return [[self.pokemonTypeMap allKeys] sortedArrayUsingSelector:@selector(compare:)];
+}
+
 @end
