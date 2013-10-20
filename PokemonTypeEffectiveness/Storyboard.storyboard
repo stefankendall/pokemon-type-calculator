@@ -83,7 +83,7 @@
         <!--Pokemon Type View Controller - Type Match-ups-->
         <scene sceneID="UPp-T2-PeA">
             <objects>
-                <tableViewController id="KP0-ls-JvB" customClass="PokemonTypeViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="matchups" id="KP0-ls-JvB" customClass="PokemonTypeViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xS9-JM-6Tq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
