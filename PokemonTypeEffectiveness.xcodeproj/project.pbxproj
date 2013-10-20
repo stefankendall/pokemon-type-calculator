@@ -1,524 +1,1251 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		020C510518131D20005CA791 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C510418131D20005CA791 /* Foundation.framework */; };
-		020C510718131D20005CA791 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C510618131D20005CA791 /* CoreGraphics.framework */; };
-		020C510918131D20005CA791 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C510818131D20005CA791 /* UIKit.framework */; };
-		020C510F18131D20005CA791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 020C510D18131D20005CA791 /* InfoPlist.strings */; };
-		020C511118131D20005CA791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 020C511018131D20005CA791 /* main.m */; };
-		020C511518131D20005CA791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 020C511418131D20005CA791 /* AppDelegate.m */; };
-		020C511718131D20005CA791 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020C511618131D20005CA791 /* Images.xcassets */; };
-		020C511E18131D20005CA791 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C511D18131D20005CA791 /* XCTest.framework */; };
-		020C511F18131D20005CA791 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C510418131D20005CA791 /* Foundation.framework */; };
-		020C512018131D20005CA791 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C510818131D20005CA791 /* UIKit.framework */; };
-		020C512818131D20005CA791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 020C512618131D20005CA791 /* InfoPlist.strings */; };
-		020C513418131E05005CA791 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020C513318131E05005CA791 /* Storyboard.storyboard */; };
-		54590009BFB4069473401CB1 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 545900D0DB7BA713F3D591E0 /* pokemon.json */; };
-		545900264B79DF065C45BB72 /* PokemonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */; };
-		545908D8D1682E64B8DFBBB9 /* PokemonTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459033C8F7937B57ED6ED52 /* PokemonTypeViewController.m */; };
-		54590959BAAE8495B14E1232 /* PokemonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A96C2BBBF828BED72F5 /* PokemonStore.m */; };
-		545909E8A028C8D9258ADC30 /* PokemonStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459088463E7F731AF419B5D /* PokemonStoreTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		020C512118131D20005CA791 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 020C50F918131D20005CA791 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 020C510018131D20005CA791;
-			remoteInfo = PokemonTypeEffectiveness;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		020C510118131D20005CA791 /* PokemonTypeEffectiveness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonTypeEffectiveness.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		020C510418131D20005CA791 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		020C510618131D20005CA791 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		020C510818131D20005CA791 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		020C510C18131D20005CA791 /* PokemonTypeEffectiveness-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PokemonTypeEffectiveness-Info.plist"; sourceTree = "<group>"; };
-		020C510E18131D20005CA791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		020C511018131D20005CA791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		020C511218131D20005CA791 /* PokemonTypeEffectiveness-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokemonTypeEffectiveness-Prefix.pch"; sourceTree = "<group>"; };
-		020C511318131D20005CA791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		020C511418131D20005CA791 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		020C511618131D20005CA791 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		020C511C18131D20005CA791 /* PokemonTypeEffectivenessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonTypeEffectivenessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		020C511D18131D20005CA791 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		020C512518131D20005CA791 /* PokemonTypeEffectivenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PokemonTypeEffectivenessTests-Info.plist"; sourceTree = "<group>"; };
-		020C512718131D20005CA791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		020C513318131E05005CA791 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		5459005A7107BB5869ECC708 /* PokemonTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonTypeViewController.h; sourceTree = "<group>"; };
-		545900D0DB7BA713F3D591E0 /* pokemon.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = pokemon.json; sourceTree = "<group>"; };
-		5459029D9F65EEFC2FCA827F /* PokemonStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonStoreTests.h; sourceTree = "<group>"; };
-		545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonListViewController.m; sourceTree = "<group>"; };
-		5459033C8F7937B57ED6ED52 /* PokemonTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTypeViewController.m; sourceTree = "<group>"; };
-		5459088463E7F731AF419B5D /* PokemonStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonStoreTests.m; sourceTree = "<group>"; };
-		54590A96C2BBBF828BED72F5 /* PokemonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonStore.m; sourceTree = "<group>"; };
-		54590EA2B8410E6C8EBD3FC0 /* PokemonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonListViewController.h; sourceTree = "<group>"; };
-		54590FB10C7E24D845C777F3 /* PokemonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonStore.h; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		020C50FE18131D20005CA791 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				020C510718131D20005CA791 /* CoreGraphics.framework in Frameworks */,
-				020C510918131D20005CA791 /* UIKit.framework in Frameworks */,
-				020C510518131D20005CA791 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		020C511918131D20005CA791 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				020C511E18131D20005CA791 /* XCTest.framework in Frameworks */,
-				020C512018131D20005CA791 /* UIKit.framework in Frameworks */,
-				020C511F18131D20005CA791 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		020C50F818131D20005CA791 = {
-			isa = PBXGroup;
-			children = (
-				020C510A18131D20005CA791 /* PokemonTypeEffectiveness */,
-				020C512318131D20005CA791 /* PokemonTypeEffectivenessTests */,
-				020C510318131D20005CA791 /* Frameworks */,
-				020C510218131D20005CA791 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		020C510218131D20005CA791 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				020C510118131D20005CA791 /* PokemonTypeEffectiveness.app */,
-				020C511C18131D20005CA791 /* PokemonTypeEffectivenessTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		020C510318131D20005CA791 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				020C510418131D20005CA791 /* Foundation.framework */,
-				020C510618131D20005CA791 /* CoreGraphics.framework */,
-				020C510818131D20005CA791 /* UIKit.framework */,
-				020C511D18131D20005CA791 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		020C510A18131D20005CA791 /* PokemonTypeEffectiveness */ = {
-			isa = PBXGroup;
-			children = (
-				020C511318131D20005CA791 /* AppDelegate.h */,
-				020C511418131D20005CA791 /* AppDelegate.m */,
-				020C511618131D20005CA791 /* Images.xcassets */,
-				020C510B18131D20005CA791 /* Supporting Files */,
-				020C513318131E05005CA791 /* Storyboard.storyboard */,
-				54590FFA08E467EE1D11861E /* Store */,
-				545900D0DB7BA713F3D591E0 /* pokemon.json */,
-				54590F9D1A70F8857E530345 /* Views */,
-			);
-			path = PokemonTypeEffectiveness;
-			sourceTree = "<group>";
-		};
-		020C510B18131D20005CA791 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				020C510C18131D20005CA791 /* PokemonTypeEffectiveness-Info.plist */,
-				020C510D18131D20005CA791 /* InfoPlist.strings */,
-				020C511018131D20005CA791 /* main.m */,
-				020C511218131D20005CA791 /* PokemonTypeEffectiveness-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		020C512318131D20005CA791 /* PokemonTypeEffectivenessTests */ = {
-			isa = PBXGroup;
-			children = (
-				020C512418131D20005CA791 /* Supporting Files */,
-				545902D015B0AC6782A41C2D /* Store */,
-			);
-			path = PokemonTypeEffectivenessTests;
-			sourceTree = "<group>";
-		};
-		020C512418131D20005CA791 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				020C512518131D20005CA791 /* PokemonTypeEffectivenessTests-Info.plist */,
-				020C512618131D20005CA791 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		545902D015B0AC6782A41C2D /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				5459088463E7F731AF419B5D /* PokemonStoreTests.m */,
-				5459029D9F65EEFC2FCA827F /* PokemonStoreTests.h */,
-			);
-			path = Store;
-			sourceTree = "<group>";
-		};
-		54590F9D1A70F8857E530345 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */,
-				54590EA2B8410E6C8EBD3FC0 /* PokemonListViewController.h */,
-				5459033C8F7937B57ED6ED52 /* PokemonTypeViewController.m */,
-				5459005A7107BB5869ECC708 /* PokemonTypeViewController.h */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		54590FFA08E467EE1D11861E /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				54590A96C2BBBF828BED72F5 /* PokemonStore.m */,
-				54590FB10C7E24D845C777F3 /* PokemonStore.h */,
-			);
-			path = Store;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		020C510018131D20005CA791 /* PokemonTypeEffectiveness */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 020C512D18131D20005CA791 /* Build configuration list for PBXNativeTarget "PokemonTypeEffectiveness" */;
-			buildPhases = (
-				020C50FD18131D20005CA791 /* Sources */,
-				020C50FE18131D20005CA791 /* Frameworks */,
-				020C50FF18131D20005CA791 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PokemonTypeEffectiveness;
-			productName = PokemonTypeEffectiveness;
-			productReference = 020C510118131D20005CA791 /* PokemonTypeEffectiveness.app */;
-			productType = "com.apple.product-type.application";
-		};
-		020C511B18131D20005CA791 /* PokemonTypeEffectivenessTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 020C513018131D20005CA791 /* Build configuration list for PBXNativeTarget "PokemonTypeEffectivenessTests" */;
-			buildPhases = (
-				020C511818131D20005CA791 /* Sources */,
-				020C511918131D20005CA791 /* Frameworks */,
-				020C511A18131D20005CA791 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				020C512218131D20005CA791 /* PBXTargetDependency */,
-			);
-			name = PokemonTypeEffectivenessTests;
-			productName = PokemonTypeEffectivenessTests;
-			productReference = 020C511C18131D20005CA791 /* PokemonTypeEffectivenessTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		020C50F918131D20005CA791 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Stefan Kendall";
-				TargetAttributes = {
-					020C511B18131D20005CA791 = {
-						TestTargetID = 020C510018131D20005CA791 /* PokemonTypeEffectiveness */;
-					};
-				};
-			};
-			buildConfigurationList = 020C50FC18131D20005CA791 /* Build configuration list for PBXProject "PokemonTypeEffectiveness" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 020C50F818131D20005CA791;
-			productRefGroup = 020C510218131D20005CA791 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				020C510018131D20005CA791 /* PokemonTypeEffectiveness */,
-				020C511B18131D20005CA791 /* PokemonTypeEffectivenessTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		020C50FF18131D20005CA791 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				020C510F18131D20005CA791 /* InfoPlist.strings in Resources */,
-				020C511718131D20005CA791 /* Images.xcassets in Resources */,
-				020C513418131E05005CA791 /* Storyboard.storyboard in Resources */,
-				54590009BFB4069473401CB1 /* pokemon.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		020C511A18131D20005CA791 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				020C512818131D20005CA791 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		020C50FD18131D20005CA791 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				020C511518131D20005CA791 /* AppDelegate.m in Sources */,
-				020C511118131D20005CA791 /* main.m in Sources */,
-				54590959BAAE8495B14E1232 /* PokemonStore.m in Sources */,
-				545900264B79DF065C45BB72 /* PokemonListViewController.m in Sources */,
-				545908D8D1682E64B8DFBBB9 /* PokemonTypeViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		020C511818131D20005CA791 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				545909E8A028C8D9258ADC30 /* PokemonStoreTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		020C512218131D20005CA791 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 020C510018131D20005CA791 /* PokemonTypeEffectiveness */;
-			targetProxy = 020C512118131D20005CA791 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		020C510D18131D20005CA791 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				020C510E18131D20005CA791 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		020C512618131D20005CA791 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				020C512718131D20005CA791 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		020C512B18131D20005CA791 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		020C512C18131D20005CA791 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		020C512E18131D20005CA791 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		020C512F18131D20005CA791 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		020C513118131D20005CA791 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PokemonTypeEffectiveness.app/PokemonTypeEffectiveness";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "PokemonTypeEffectivenessTests/PokemonTypeEffectivenessTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		020C513218131D20005CA791 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PokemonTypeEffectiveness.app/PokemonTypeEffectiveness";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch";
-				INFOPLIST_FILE = "PokemonTypeEffectivenessTests/PokemonTypeEffectivenessTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		020C50FC18131D20005CA791 /* Build configuration list for PBXProject "PokemonTypeEffectiveness" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				020C512B18131D20005CA791 /* Debug */,
-				020C512C18131D20005CA791 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		020C512D18131D20005CA791 /* Build configuration list for PBXNativeTarget "PokemonTypeEffectiveness" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				020C512E18131D20005CA791 /* Debug */,
-				020C512F18131D20005CA791 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		020C513018131D20005CA791 /* Build configuration list for PBXNativeTarget "PokemonTypeEffectivenessTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				020C513118131D20005CA791 /* Debug */,
-				020C513218131D20005CA791 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 020C50F918131D20005CA791 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>020C50F818131D20005CA791</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>020C510A18131D20005CA791</string>
+				<string>020C512318131D20005CA791</string>
+				<string>020C510318131D20005CA791</string>
+				<string>020C510218131D20005CA791</string>
+				<string>22E03E531D714C5285B1606F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C50F918131D20005CA791</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Stefan Kendall</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>020C511B18131D20005CA791</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>020C510018131D20005CA791</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>020C50FC18131D20005CA791</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>020C50F818131D20005CA791</string>
+			<key>productRefGroup</key>
+			<string>020C510218131D20005CA791</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>020C510018131D20005CA791</string>
+				<string>020C511B18131D20005CA791</string>
+			</array>
+		</dict>
+		<key>020C50FC18131D20005CA791</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>020C512B18131D20005CA791</string>
+				<string>020C512C18131D20005CA791</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>020C50FD18131D20005CA791</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>020C511518131D20005CA791</string>
+				<string>020C511118131D20005CA791</string>
+				<string>54590959BAAE8495B14E1232</string>
+				<string>545900264B79DF065C45BB72</string>
+				<string>545908D8D1682E64B8DFBBB9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>020C50FE18131D20005CA791</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>020C510718131D20005CA791</string>
+				<string>020C510918131D20005CA791</string>
+				<string>020C510518131D20005CA791</string>
+				<string>BAFD99D7FFF44B5B88DE24E0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>020C50FF18131D20005CA791</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>020C510F18131D20005CA791</string>
+				<string>020C511718131D20005CA791</string>
+				<string>020C513418131E05005CA791</string>
+				<string>54590009BFB4069473401CB1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>020C510018131D20005CA791</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>020C512D18131D20005CA791</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F79EA5D050B848FD95790954</string>
+				<string>020C50FD18131D20005CA791</string>
+				<string>020C50FE18131D20005CA791</string>
+				<string>020C50FF18131D20005CA791</string>
+				<string>5B3C599EB336469781E78145</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PokemonTypeEffectiveness</string>
+			<key>productName</key>
+			<string>PokemonTypeEffectiveness</string>
+			<key>productReference</key>
+			<string>020C510118131D20005CA791</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>020C510118131D20005CA791</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PokemonTypeEffectiveness.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>020C510218131D20005CA791</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>020C510118131D20005CA791</string>
+				<string>020C511C18131D20005CA791</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C510318131D20005CA791</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>020C510418131D20005CA791</string>
+				<string>020C510618131D20005CA791</string>
+				<string>020C510818131D20005CA791</string>
+				<string>020C511D18131D20005CA791</string>
+				<string>9DFA38C800B34C7798047A63</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C510418131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>020C510518131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C510418131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C510618131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>020C510718131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C510618131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C510818131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>020C510918131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C510818131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C510A18131D20005CA791</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>020C511318131D20005CA791</string>
+				<string>020C511418131D20005CA791</string>
+				<string>020C511618131D20005CA791</string>
+				<string>020C510B18131D20005CA791</string>
+				<string>020C513318131E05005CA791</string>
+				<string>54590FFA08E467EE1D11861E</string>
+				<string>545900D0DB7BA713F3D591E0</string>
+				<string>54590F9D1A70F8857E530345</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>PokemonTypeEffectiveness</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C510B18131D20005CA791</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>020C510C18131D20005CA791</string>
+				<string>020C510D18131D20005CA791</string>
+				<string>020C511018131D20005CA791</string>
+				<string>020C511218131D20005CA791</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C510C18131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>PokemonTypeEffectiveness-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C510D18131D20005CA791</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>020C510E18131D20005CA791</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C510E18131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C510F18131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C510D18131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C511018131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C511118131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C511018131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C511218131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PokemonTypeEffectiveness-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C511318131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C511418131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C511518131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C511418131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C511618131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C511718131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C511618131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C511818131D20005CA791</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>545909E8A028C8D9258ADC30</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>020C511918131D20005CA791</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>020C511E18131D20005CA791</string>
+				<string>020C512018131D20005CA791</string>
+				<string>020C511F18131D20005CA791</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>020C511A18131D20005CA791</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>020C512818131D20005CA791</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>020C511B18131D20005CA791</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>020C513018131D20005CA791</string>
+			<key>buildPhases</key>
+			<array>
+				<string>020C511818131D20005CA791</string>
+				<string>020C511918131D20005CA791</string>
+				<string>020C511A18131D20005CA791</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>020C512218131D20005CA791</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PokemonTypeEffectivenessTests</string>
+			<key>productName</key>
+			<string>PokemonTypeEffectivenessTests</string>
+			<key>productReference</key>
+			<string>020C511C18131D20005CA791</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>020C511C18131D20005CA791</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PokemonTypeEffectivenessTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>020C511D18131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>020C511E18131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C511D18131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C511F18131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C510418131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C512018131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C510818131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C512118131D20005CA791</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>020C50F918131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>020C510018131D20005CA791</string>
+			<key>remoteInfo</key>
+			<string>PokemonTypeEffectiveness</string>
+		</dict>
+		<key>020C512218131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>020C510018131D20005CA791</string>
+			<key>targetProxy</key>
+			<string>020C512118131D20005CA791</string>
+		</dict>
+		<key>020C512318131D20005CA791</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>020C512418131D20005CA791</string>
+				<string>545902D015B0AC6782A41C2D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>PokemonTypeEffectivenessTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C512418131D20005CA791</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>020C512518131D20005CA791</string>
+				<string>020C512618131D20005CA791</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C512518131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>PokemonTypeEffectivenessTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C512618131D20005CA791</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>020C512718131D20005CA791</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C512718131D20005CA791</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C512818131D20005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C512618131D20005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>020C512B18131D20005CA791</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>020C512C18131D20005CA791</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>020C512D18131D20005CA791</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>020C512E18131D20005CA791</string>
+				<string>020C512F18131D20005CA791</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>020C512E18131D20005CA791</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>22E03E531D714C5285B1606F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch</string>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INFOPLIST_FILE</key>
+				<string>PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>020C512F18131D20005CA791</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>22E03E531D714C5285B1606F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch</string>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INFOPLIST_FILE</key>
+				<string>PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>020C513018131D20005CA791</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>020C513118131D20005CA791</string>
+				<string>020C513218131D20005CA791</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>020C513118131D20005CA791</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/PokemonTypeEffectiveness.app/PokemonTypeEffectiveness</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>PokemonTypeEffectivenessTests/PokemonTypeEffectivenessTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>020C513218131D20005CA791</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/PokemonTypeEffectiveness.app/PokemonTypeEffectiveness</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>PokemonTypeEffectivenessTests/PokemonTypeEffectivenessTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>020C513318131E05005CA791</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>Storyboard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>020C513418131E05005CA791</key>
+		<dict>
+			<key>fileRef</key>
+			<string>020C513318131E05005CA791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>22E03E531D714C5285B1606F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>54590009BFB4069473401CB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>545900D0DB7BA713F3D591E0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545900264B79DF065C45BB72</key>
+		<dict>
+			<key>fileRef</key>
+			<string>545902F2BF61369A2D8C2AA5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5459005A7107BB5869ECC708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PokemonTypeViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545900D0DB7BA713F3D591E0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.json</string>
+			<key>path</key>
+			<string>pokemon.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459029D9F65EEFC2FCA827F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PokemonStoreTests.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545902D015B0AC6782A41C2D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5459088463E7F731AF419B5D</string>
+				<string>5459029D9F65EEFC2FCA827F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Store</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545902F2BF61369A2D8C2AA5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PokemonListViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459033C8F7937B57ED6ED52</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PokemonTypeViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459088463E7F731AF419B5D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PokemonStoreTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545908D8D1682E64B8DFBBB9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5459033C8F7937B57ED6ED52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590959BAAE8495B14E1232</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590A96C2BBBF828BED72F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545909E8A028C8D9258ADC30</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5459088463E7F731AF419B5D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590A96C2BBBF828BED72F5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PokemonStore.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590EA2B8410E6C8EBD3FC0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PokemonListViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590F9D1A70F8857E530345</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>545902F2BF61369A2D8C2AA5</string>
+				<string>54590EA2B8410E6C8EBD3FC0</string>
+				<string>5459033C8F7937B57ED6ED52</string>
+				<string>5459005A7107BB5869ECC708</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590FB10C7E24D845C777F3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PokemonStore.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590FFA08E467EE1D11861E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>54590A96C2BBBF828BED72F5</string>
+				<string>54590FB10C7E24D845C777F3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Store</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5B3C599EB336469781E78145</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>9DFA38C800B34C7798047A63</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>BAFD99D7FFF44B5B88DE24E0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9DFA38C800B34C7798047A63</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>F79EA5D050B848FD95790954</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>020C50F918131D20005CA791</string>
+</dict>
+</plist>
