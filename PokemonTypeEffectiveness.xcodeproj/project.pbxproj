@@ -21,6 +21,7 @@
 		020C513418131E05005CA791 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020C513318131E05005CA791 /* Storyboard.storyboard */; };
 		54590009BFB4069473401CB1 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 545900D0DB7BA713F3D591E0 /* pokemon.json */; };
 		545900264B79DF065C45BB72 /* PokemonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */; };
+		545908D8D1682E64B8DFBBB9 /* PokemonTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459033C8F7937B57ED6ED52 /* PokemonTypeViewController.m */; };
 		54590959BAAE8495B14E1232 /* PokemonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A96C2BBBF828BED72F5 /* PokemonStore.m */; };
 		545909E8A028C8D9258ADC30 /* PokemonStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459088463E7F731AF419B5D /* PokemonStoreTests.m */; };
 /* End PBXBuildFile section */
@@ -52,9 +53,11 @@
 		020C512518131D20005CA791 /* PokemonTypeEffectivenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PokemonTypeEffectivenessTests-Info.plist"; sourceTree = "<group>"; };
 		020C512718131D20005CA791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		020C513318131E05005CA791 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		5459005A7107BB5869ECC708 /* PokemonTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonTypeViewController.h; sourceTree = "<group>"; };
 		545900D0DB7BA713F3D591E0 /* pokemon.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = pokemon.json; sourceTree = "<group>"; };
 		5459029D9F65EEFC2FCA827F /* PokemonStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonStoreTests.h; sourceTree = "<group>"; };
 		545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonListViewController.m; sourceTree = "<group>"; };
+		5459033C8F7937B57ED6ED52 /* PokemonTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTypeViewController.m; sourceTree = "<group>"; };
 		5459088463E7F731AF419B5D /* PokemonStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonStoreTests.m; sourceTree = "<group>"; };
 		54590A96C2BBBF828BED72F5 /* PokemonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonStore.m; sourceTree = "<group>"; };
 		54590EA2B8410E6C8EBD3FC0 /* PokemonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonListViewController.h; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 			children = (
 				545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */,
 				54590EA2B8410E6C8EBD3FC0 /* PokemonListViewController.h */,
+				5459033C8F7937B57ED6ED52 /* PokemonTypeViewController.m */,
+				5459005A7107BB5869ECC708 /* PokemonTypeViewController.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 				020C511118131D20005CA791 /* main.m in Sources */,
 				54590959BAAE8495B14E1232 /* PokemonStore.m in Sources */,
 				545900264B79DF065C45BB72 /* PokemonListViewController.m in Sources */,
+				545908D8D1682E64B8DFBBB9 /* PokemonTypeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

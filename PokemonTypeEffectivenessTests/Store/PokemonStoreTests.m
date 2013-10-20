@@ -21,4 +21,10 @@
     XCTAssertEqual([[[PokemonStore instance] namesMatching:@""] count], (NSUInteger) 649);
 }
 
+- (void)testFiltersCaseInsensitive {
+    [[PokemonStore instance] load];
+    NSArray *filteredList = [[PokemonStore instance] namesMatching:@"abra"];
+    XCTAssertTrue([filteredList containsObject:@"Abra"]);
+}
+
 @end
