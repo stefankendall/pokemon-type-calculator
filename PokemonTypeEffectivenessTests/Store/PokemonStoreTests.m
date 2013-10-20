@@ -3,8 +3,11 @@
 
 @implementation PokemonStoreTests
 
-- (void)testLoadsPokemonDataFromFile {
+-(void) setup {
     [[PokemonStore instance] load];
+}
+
+- (void)testLoadsPokemonDataFromFile {
     NSDictionary *data = [PokemonStore instance].pokemonTypeMap;
     XCTAssertEqual([data count], (NSUInteger) 649);
 
@@ -14,7 +17,6 @@
 }
 
 - (void)testFiltersPokemonNames {
-    [[PokemonStore instance] load];
     NSArray *filteredList = [[PokemonStore instance] namesMatching:@"Mime"];
     NSArray *expected = @[@"Mime Jr", @"Mr Mime"];
     XCTAssertEqualObjects(filteredList, expected);
@@ -22,7 +24,6 @@
 }
 
 - (void)testFiltersCaseInsensitive {
-    [[PokemonStore instance] load];
     NSArray *filteredList = [[PokemonStore instance] namesMatching:@"abra"];
     XCTAssertTrue([filteredList containsObject:@"Abra"]);
 }
