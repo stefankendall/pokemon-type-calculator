@@ -20,6 +20,7 @@
 		020C512818131D20005CA791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 020C512618131D20005CA791 /* InfoPlist.strings */; };
 		020C513418131E05005CA791 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020C513318131E05005CA791 /* Storyboard.storyboard */; };
 		0255078918140B5E003B4CD6 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0255078818140B5E003B4CD6 /* InfoCell.xib */; };
+		0255078B18140D41003B4CD6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0255078A18140D41003B4CD6 /* StoreKit.framework */; };
 		54590009BFB4069473401CB1 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 545900D0DB7BA713F3D591E0 /* pokemon.json */; };
 		545900264B79DF065C45BB72 /* PokemonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */; };
 		545900B593AB839C757CB4C9 /* PokemonTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902296C0DFBB5BE0F9F25 /* PokemonTypeViewController.m */; };
@@ -58,6 +59,7 @@
 		020C512718131D20005CA791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		020C513318131E05005CA791 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		0255078818140B5E003B4CD6 /* InfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		0255078A18140D41003B4CD6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		22E03E531D714C5285B1606F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		545900D0DB7BA713F3D591E0 /* pokemon.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = pokemon.json; sourceTree = "<group>"; };
 		545902296C0DFBB5BE0F9F25 /* PokemonTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTypeViewController.m; sourceTree = "<group>"; };
@@ -80,10 +82,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFD99D7FFF44B5B88DE24E0 /* libPods.a in Frameworks */,
 				020C510718131D20005CA791 /* CoreGraphics.framework in Frameworks */,
 				020C510918131D20005CA791 /* UIKit.framework in Frameworks */,
+				0255078B18140D41003B4CD6 /* StoreKit.framework in Frameworks */,
 				020C510518131D20005CA791 /* Foundation.framework in Frameworks */,
-				BAFD99D7FFF44B5B88DE24E0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +126,7 @@
 		020C510318131D20005CA791 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0255078A18140D41003B4CD6 /* StoreKit.framework */,
 				020C510418131D20005CA791 /* Foundation.framework */,
 				020C510618131D20005CA791 /* CoreGraphics.framework */,
 				020C510818131D20005CA791 /* UIKit.framework */,
@@ -283,6 +287,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Stefan Kendall";
 				TargetAttributes = {
+					020C510018131D20005CA791 = {
+						DevelopmentTeam = 255V99ZU6N;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
 					020C511B18131D20005CA791 = {
 						TestTargetID = 020C510018131D20005CA791 /* PokemonTypeEffectiveness */;
 					};
@@ -493,6 +505,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -501,9 +515,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "${inherited}/**";
 				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/**";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -514,6 +529,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -522,9 +539,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "${inherited}/**";
 				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/**";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -545,9 +563,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = "PokemonTypeEffectivenessTests/PokemonTypeEffectivenessTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -564,9 +584,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = "PokemonTypeEffectivenessTests/PokemonTypeEffectivenessTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
