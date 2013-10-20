@@ -47,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		020C510118131D20005CA791 /* PokemonTypeEffectiveness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonTypeEffectiveness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		020C510118131D20005CA791 /* Poke Types.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke Types.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		020C510418131D20005CA791 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		020C510618131D20005CA791 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		020C510818131D20005CA791 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -131,7 +131,7 @@
 		020C510218131D20005CA791 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				020C510118131D20005CA791 /* PokemonTypeEffectiveness.app */,
+				020C510118131D20005CA791 /* Poke Types.app */,
 				020C511C18131D20005CA791 /* PokemonTypeEffectivenessTests.xctest */,
 			);
 			name = Products;
@@ -280,7 +280,7 @@
 			);
 			name = PokemonTypeEffectiveness;
 			productName = PokemonTypeEffectiveness;
-			productReference = 020C510118131D20005CA791 /* PokemonTypeEffectiveness.app */;
+			productReference = 020C510118131D20005CA791 /* Poke Types.app */;
 			productType = "com.apple.product-type.application";
 		};
 		020C511B18131D20005CA791 /* PokemonTypeEffectivenessTests */ = {
@@ -319,7 +319,7 @@
 						};
 					};
 					020C511B18131D20005CA791 = {
-						TestTargetID = 020C510018131D20005CA791 /* PokemonTypeEffectiveness */;
+						TestTargetID = 020C510018131D20005CA791;
 					};
 				};
 			};
@@ -545,7 +545,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "${inherited}/**";
 				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Poke Types";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -569,7 +569,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "${inherited}/**";
 				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Poke Types";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
