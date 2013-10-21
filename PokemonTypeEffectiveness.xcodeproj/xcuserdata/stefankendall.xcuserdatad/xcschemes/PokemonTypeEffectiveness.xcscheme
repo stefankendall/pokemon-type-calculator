@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "020C510018131D20005CA791"
-               BuildableName = "PokemonTypeEffectiveness.app"
+               BuildableName = "Poke Types.app"
                BlueprintName = "PokemonTypeEffectiveness"
                ReferencedContainer = "container:PokemonTypeEffectiveness.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "020C510018131D20005CA791"
-            BuildableName = "PokemonTypeEffectiveness.app"
+            BuildableName = "Poke Types.app"
             BlueprintName = "PokemonTypeEffectiveness"
             ReferencedContainer = "container:PokemonTypeEffectiveness.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "020C510018131D20005CA791"
-            BuildableName = "PokemonTypeEffectiveness.app"
+            BuildableName = "Poke Types.app"
             BlueprintName = "PokemonTypeEffectiveness"
             ReferencedContainer = "container:PokemonTypeEffectiveness.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "020C510018131D20005CA791"
-            BuildableName = "PokemonTypeEffectiveness.app"
+            BuildableName = "Poke Types.app"
             BlueprintName = "PokemonTypeEffectiveness"
             ReferencedContainer = "container:PokemonTypeEffectiveness.xcodeproj">
          </BuildableReference>
