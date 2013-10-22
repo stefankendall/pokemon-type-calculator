@@ -1,0 +1,2 @@
+@interface TipViewController : UITableViewController
+@end

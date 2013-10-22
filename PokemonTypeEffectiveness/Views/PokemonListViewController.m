@@ -49,8 +49,10 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    PokemonTypeViewController *typeController = [segue destinationViewController];
-    [typeController setPokemon: self.tappedPokemonName];
+    if([[segue identifier] isEqualToString:@"showTypeMatchup"]){
+        PokemonTypeViewController *typeController = [segue destinationViewController];
+        [typeController setPokemon: self.tappedPokemonName];
+    }
 }
 
 - (BOOL)prefersStatusBarHidden {
