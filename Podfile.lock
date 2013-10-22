@@ -1,10 +1,13 @@
 PODS:
   - CTCustomTableViewCell (2)
+  - IAPManager (0.2.2)
 
 DEPENDENCIES:
   - CTCustomTableViewCell
+  - IAPManager
 
 SPEC CHECKSUMS:
   CTCustomTableViewCell: d3a141b32843da29aefb2157bbc143dd210b05f3
+  IAPManager: fb36017e64524e2ecb9ae2101daaa83165cc5211
 
-COCOAPODS: 0.26.2
+COCOAPODS: 0.25.0
