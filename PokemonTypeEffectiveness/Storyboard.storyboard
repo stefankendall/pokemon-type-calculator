@@ -178,6 +178,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Leave a tip?" id="1bC-KJ-l9a"/>
+                    <connections>
+                        <outlet property="tip1" destination="cLT-0w-ANZ" id="Izt-vm-tfQ"/>
+                        <outlet property="tip2" destination="cyP-nZ-2U7" id="JMH-C3-cQ7"/>
+                        <outlet property="tip3" destination="tNz-pt-JYk" id="lvZ-l2-gyS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0E9-72-y4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

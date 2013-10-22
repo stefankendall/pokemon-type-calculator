@@ -9,7 +9,12 @@
 
 - (void)loadProducts:(void (^)())callback;
 
+- (NSString *)priceOf:(NSString *)productId;
+
 @property(nonatomic, strong) NSArray *products;
+
+- (BOOL)isLoaded;
+
 @property(nonatomic, strong) NSArray *allPurchaseIds;
 
 @end

@@ -45,4 +45,8 @@
     }];
 }
 
+- (BOOL)isLoaded {
+    return [self.products count] > 0;
+}
+
 @end
