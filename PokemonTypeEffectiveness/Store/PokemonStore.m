@@ -38,7 +38,7 @@
     }
 
     return [[self names] filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(NSString *name, NSDictionary *bindings) {
-        return [[name lowercaseString] rangeOfString:[filter lowercaseString]].location != NSNotFound;
+        return [[name lowercaseString] rangeOfString:[filter lowercaseString]].location == 0;
     }]];
 }
 

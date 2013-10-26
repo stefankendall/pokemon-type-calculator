@@ -1,10 +1,16 @@
 PODS:
   - CTCustomTableViewCell (2)
+  - IAPManager (0.2.2)
+  - MRCEnumerable (0.1.1)
 
 DEPENDENCIES:
   - CTCustomTableViewCell
+  - IAPManager
+  - MRCEnumerable
 
 SPEC CHECKSUMS:
   CTCustomTableViewCell: d3a141b32843da29aefb2157bbc143dd210b05f3
+  IAPManager: fb36017e64524e2ecb9ae2101daaa83165cc5211
+  MRCEnumerable: d0a1f19dd32d9be3f2a53258710a2825a28c3ab3
 
-COCOAPODS: 0.26.2
+COCOAPODS: 0.25.0
