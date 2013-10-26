@@ -18,7 +18,7 @@
 
 - (void)testFiltersPokemonNames {
     NSArray *filteredList = [[PokemonStore instance] namesMatching:@"Mime"];
-    NSArray *expected = @[@"Mime Jr", @"Mr Mime"];
+    NSArray *expected = @[@"Mime Jr"];
     XCTAssertEqualObjects(filteredList, expected);
     XCTAssertEqual([[[PokemonStore instance] namesMatching:@""] count], (NSUInteger) 649);
 }
