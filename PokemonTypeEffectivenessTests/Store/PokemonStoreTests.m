@@ -9,7 +9,7 @@
 
 - (void)testLoadsPokemonDataFromFile {
     NSDictionary *data = [PokemonStore instance].pokemonTypeMap;
-    XCTAssertEqual([data count], (NSUInteger) 649);
+    XCTAssertEqual([data count], (NSUInteger) 717);
 
     NSArray *types = @[@"fire", @"flying"];
     XCTAssertEqualObjects(types, [[PokemonStore instance] typesFor:@"Charizard"]);
@@ -20,7 +20,7 @@
     NSArray *filteredList = [[PokemonStore instance] namesMatching:@"Mime"];
     NSArray *expected = @[@"Mime Jr"];
     XCTAssertEqualObjects(filteredList, expected);
-    XCTAssertEqual([[[PokemonStore instance] namesMatching:@""] count], (NSUInteger) 649);
+    XCTAssertEqual([[[PokemonStore instance] namesMatching:@""] count], (NSUInteger) 717);
 }
 
 - (void)testFiltersCaseInsensitive {
