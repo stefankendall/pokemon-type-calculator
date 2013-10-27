@@ -13,7 +13,6 @@ int const NOT_EFFECTIVE_SECTION = 2;
 - (void)viewWillAppear:(BOOL)animated {
     [self.tableView reloadData];
     self.navigationItem.title = self.pokemon;
-    [self.navigationController.navigationBar pushNavigationItem:self.navigationItem animated:NO];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -68,8 +67,7 @@ int const NOT_EFFECTIVE_SECTION = 2;
             type = [self notEffectiveTypes][(NSUInteger) [indexPath row]];
         }
         NSDictionary *effectiveness = [self effectivenessForPokemon];
-        [cell.multiplier setText:[NSString stringWithFormat:@"%@x", effectiveness[type]]];
-        [cell.type setText:type];
+        [cell setType:type withMultipler:effectiveness[type]];
         return cell;
     }
 }
