@@ -49,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		020C510118131D20005CA791 /* Poke Types.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke Types.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		020C510118131D20005CA791 /* Quick Attack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Attack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		020C510418131D20005CA791 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		020C510618131D20005CA791 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		020C510818131D20005CA791 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -60,7 +60,7 @@
 		020C511318131D20005CA791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		020C511418131D20005CA791 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		020C511618131D20005CA791 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		020C511C18131D20005CA791 /* PokemonTypeEffectivenessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonTypeEffectivenessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		020C511C18131D20005CA791 /* Quick Attack.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick Attack.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		020C511D18131D20005CA791 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		020C512518131D20005CA791 /* PokemonTypeEffectivenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PokemonTypeEffectivenessTests-Info.plist"; sourceTree = "<group>"; };
 		020C512718131D20005CA791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 		020C510218131D20005CA791 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				020C510118131D20005CA791 /* Poke Types.app */,
-				020C511C18131D20005CA791 /* PokemonTypeEffectivenessTests.xctest */,
+				020C510118131D20005CA791 /* Quick Attack.app */,
+				020C511C18131D20005CA791 /* Quick Attack.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 			);
 			name = PokemonTypeEffectiveness;
 			productName = PokemonTypeEffectiveness;
-			productReference = 020C510118131D20005CA791 /* Poke Types.app */;
+			productReference = 020C510118131D20005CA791 /* Quick Attack.app */;
 			productType = "com.apple.product-type.application";
 		};
 		020C511B18131D20005CA791 /* PokemonTypeEffectivenessTests */ = {
@@ -308,7 +308,7 @@
 			);
 			name = PokemonTypeEffectivenessTests;
 			productName = PokemonTypeEffectivenessTests;
-			productReference = 020C511C18131D20005CA791 /* PokemonTypeEffectivenessTests.xctest */;
+			productReference = 020C511C18131D20005CA791 /* Quick Attack.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -329,7 +329,7 @@
 						};
 					};
 					020C511B18131D20005CA791 = {
-						TestTargetID = 020C510018131D20005CA791 /* PokemonTypeEffectiveness */;
+						TestTargetID = 020C510018131D20005CA791;
 					};
 				};
 			};
@@ -560,7 +560,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "${inherited}/**";
 				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
-				PRODUCT_NAME = "Poke Types";
+				PRODUCT_NAME = "Quick Attack";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				VALID_ARCHS = "armv7 armv7s";
@@ -586,7 +586,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "${inherited}/**";
 				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
-				PRODUCT_NAME = "Poke Types";
+				PRODUCT_NAME = "Quick Attack";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				VALID_ARCHS = "armv7 armv7s";
@@ -598,7 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Poke Types.app/Poke Types";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/${PRODUCT_NAME}.app/${PRODUCT_NAME}";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -612,7 +612,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = "PokemonTypeEffectivenessTests/PokemonTypeEffectivenessTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Quick Attack";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				VALID_ARCHS = "armv7 armv7s";
@@ -624,7 +624,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Poke Types.app/Poke Types";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/${PRODUCT_NAME}.app/${PRODUCT_NAME}";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -634,7 +634,7 @@
 				GCC_PREFIX_HEADER = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = "PokemonTypeEffectivenessTests/PokemonTypeEffectivenessTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Quick Attack";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				VALID_ARCHS = "armv7 armv7s";
