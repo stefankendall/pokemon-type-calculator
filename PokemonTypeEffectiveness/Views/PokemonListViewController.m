@@ -49,9 +49,15 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([[segue identifier] isEqualToString:@"showTypeMatchup"]){
+    if ([[segue identifier] isEqualToString:@"showTypeMatchup"]) {
         PokemonTypeViewController *typeController = [segue destinationViewController];
-        [typeController setPokemon: self.tappedPokemonName];
+        [typeController setPokemon:self.tappedPokemonName];
+    }
+}
+
+- (void)searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller {
+    if (![self.tableView.subviews containsObject: self.searchBar]) {
+        [self.tableView insertSubview:self.searchBar aboveSubview:self.tableView];
     }
 }
 
