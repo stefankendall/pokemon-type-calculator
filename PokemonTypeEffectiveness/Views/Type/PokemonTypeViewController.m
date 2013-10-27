@@ -12,6 +12,8 @@ int const NOT_EFFECTIVE_SECTION = 2;
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.tableView reloadData];
+    self.navigationItem.title = self.pokemon;
+    [self.navigationController.navigationBar pushNavigationItem:self.navigationItem animated:NO];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -49,7 +51,7 @@ int const NOT_EFFECTIVE_SECTION = 2;
             cell = [InfoCell create];
         }
 
-        [cell setPokemon:self.pokemon withTypes:[[PokemonStore instance] typesFor:self.pokemon]];
+        [cell setPokemonTypes:[[PokemonStore instance] typesFor:self.pokemon]];
         return cell;
     }
     else {

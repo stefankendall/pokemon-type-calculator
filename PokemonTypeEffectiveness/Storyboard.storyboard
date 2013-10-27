@@ -188,7 +188,7 @@
             </objects>
             <point key="canvasLocation" x="949" y="703"/>
         </scene>
-        <!--Pokemon Type View Controller - Type Match-ups-->
+        <!--Pokemon Type View Controller - Charizard-->
         <scene sceneID="UPp-T2-PeA">
             <objects>
                 <tableViewController storyboardIdentifier="matchups" id="KP0-ls-JvB" customClass="PokemonTypeViewController" sceneMemberID="viewController">
@@ -251,7 +251,7 @@
                             <outlet property="delegate" destination="KP0-ls-JvB" id="OaL-Vu-yMP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Type Match-ups" id="TaX-Pe-02l"/>
+                    <navigationItem key="navigationItem" title="Charizard" id="TaX-Pe-02l"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HaB-W8-aMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

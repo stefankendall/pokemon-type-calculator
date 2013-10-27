@@ -2,8 +2,7 @@
 
 @implementation InfoCell
 
-- (void)setPokemon:(NSString *)name withTypes:(NSArray *)types {
-    [self.name setText:name];
+- (void)setPokemonTypes:(NSArray *)types {
     [self.types setText:[types componentsJoinedByString:@" | "]];
 }
 
