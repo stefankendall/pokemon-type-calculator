@@ -72,6 +72,11 @@ int const NOT_EFFECTIVE_SECTION = 2;
     }
 }
 
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return NO;
+}
+
 -(NSArray *) superEffectiveTypes {
     NSDictionary * effectiveness = [self effectivenessForPokemon];
     NSMutableArray *types = [@[] mutableCopy];
