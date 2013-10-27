@@ -5,8 +5,7 @@
 
 - (void) testSetsLabels {
     InfoCell *cell = [InfoCell create];
-    [cell setPokemon:@"Articuno" withTypes:@[@"ice", @"flying"]];
-    XCTAssertEqualObjects([cell.name text], @"Articuno");
+    [cell setPokemonTypes:@[@"ice", @"flying"]];
     XCTAssertEqualObjects([cell.types text], @"ice | flying");
 }
 
