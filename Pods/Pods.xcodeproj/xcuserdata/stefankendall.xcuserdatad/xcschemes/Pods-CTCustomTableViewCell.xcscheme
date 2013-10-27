@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2FC905A039A9434B9634D932"
+               BlueprintIdentifier = "A5361FBFECE24502820935F5"
                BuildableName = "libPods-CTCustomTableViewCell.a"
                BlueprintName = "Pods-CTCustomTableViewCell"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -8,90 +8,41 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-IAPManager.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-MRCEnumerable.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>060300D125664727BC619F66</key>
+		<key>3CB67546970740EDB6530396</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0FA14919FEA8447EBB08662E</key>
+		<key>65E31B4CD3754410B866B452</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2FC905A039A9434B9634D932</key>
+		<key>A5361FBFECE24502820935F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3587E5EAA2434257B9E86493</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>35F936291011420888793A2A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>96D0D3C174984FD59D5E1E5F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B1340C06F8854B7994CCF131</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BE4AEBC06C75401AA8B2366A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C9CBF62C145C496E87E3972F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CAA45590E8AE42BDB4DC1E8E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DD3EC2DEFD584E1E972FABE2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F509E4AABA7849A5A12CA70D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FD35FB24ADC74216A3EADD03</key>
+		<key>D06DC7536D264740A498402F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
