@@ -23,7 +23,7 @@
             @"fire" : [UIColor colorWithRed:240 / 255.0f green:128 / 255.0f blue:48 / 255.0f alpha:1.0f],
             @"water" : [UIColor blueColor],
             @"grass" : [UIColor colorWithRed:0/255.0f green:132/255.0f blue:0/255.0f alpha:1.0f],
-            @"electric" : [UIColor colorWithRed:248 / 255.0f green:196 / 255.0f blue:45 / 255.0f alpha:1.0f],
+            @"electric" : [UIColor colorWithRed:226/255.0f green:219/255.0f blue:0/255.0f alpha:1.0f],
             @"psychic" : [UIColor colorWithRed:248/255.0f green:88/255.0f blue:136/255.0f alpha:1.0f],
             @"ice" : [UIColor colorWithRed:99/255.0f green:141/255.0f blue:141/255.0f alpha:1.0f],
             @"dragon" : [UIColor colorWithRed:112/255.0f green:56/255.0f blue:248/255.0f alpha:1.0f],
