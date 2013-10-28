@@ -22,7 +22,7 @@
             @"steel" : [UIColor colorWithRed:156/255.0f green:156/255.0f blue:156/255.0f alpha:1.0f],
             @"fire" : [UIColor colorWithRed:240 / 255.0f green:128 / 255.0f blue:48 / 255.0f alpha:1.0f],
             @"water" : [UIColor blueColor],
-            @"grass" : [UIColor colorWithRed:120 / 255.0f green:200 / 255.0f blue:80 / 255.0f alpha:1.0f],
+            @"grass" : [UIColor colorWithRed:0/255.0f green:132/255.0f blue:0/255.0f alpha:1.0f],
             @"electric" : [UIColor colorWithRed:248 / 255.0f green:196 / 255.0f blue:45 / 255.0f alpha:1.0f],
             @"psychic" : [UIColor colorWithRed:248/255.0f green:88/255.0f blue:136/255.0f alpha:1.0f],
             @"ice" : [UIColor colorWithRed:99/255.0f green:141/255.0f blue:141/255.0f alpha:1.0f],
