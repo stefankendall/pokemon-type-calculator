@@ -24,12 +24,16 @@
                                               error:nil];
 }
 
-- (NSArray *)typesFor:(NSString *)pokemonName {
-    return self.pokemonData[pokemonName][@"types"];
+- (NSArray *)typesFor:(NSString *)name {
+    return self.pokemonData[name][@"types"];
 }
 
 - (NSArray *)names {
     return [[self.pokemonData allKeys] sortedArrayUsingSelector:@selector(compare:)];
+}
+
+- (NSDictionary *)statsFor:(NSString *)name {
+    return self.pokemonData[name][@"stats"];
 }
 
 - (NSArray *)namesMatching:(NSString *)filter {
