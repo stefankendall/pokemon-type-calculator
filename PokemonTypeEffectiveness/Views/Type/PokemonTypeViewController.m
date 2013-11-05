@@ -8,11 +8,22 @@ int const INFO_SECTION = 0;
 int const SUPER_EFFECTIVE_SECTION = 1;
 int const NOT_EFFECTIVE_SECTION = 2;
 
+@interface PokemonTypeViewController()
+@property(nonatomic) BOOL showingTypes;
+@end
+
 @implementation PokemonTypeViewController
 
 - (void)viewWillAppear:(BOOL)animated {
+    self.showingTypes = YES;
+    [self changeStatsButton];
+
     [self.tableView reloadData];
     self.navigationItem.title = self.pokemon;
+}
+
+- (void)changeStatsButton {
+    [self.statsButton setTitle:self.showingTypes ? @"Stats" : @"Types"];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -70,6 +81,12 @@ int const NOT_EFFECTIVE_SECTION = 2;
         [cell setType:type withMultipler:effectiveness[type]];
         return cell;
     }
+}
+
+- (IBAction)statsButtonTapped:(id)sender {
+    self.showingTypes = !self.showingTypes;
+    [self changeStatsButton];
+    [self.tableView reloadData];
 }
 
 -(NSArray *) superEffectiveTypes {

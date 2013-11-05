@@ -18,18 +18,18 @@
     NSString *data = [NSString stringWithContentsOfFile:path
                                                encoding:NSUTF8StringEncoding
                                                   error:nil];
-    self.pokemonTypeMap =
+    self.pokemonData =
             [NSJSONSerialization JSONObjectWithData:[data dataUsingEncoding:NSUTF8StringEncoding]
                                             options:NSJSONReadingMutableContainers
                                               error:nil];
 }
 
 - (NSArray *)typesFor:(NSString *)pokemonName {
-    return self.pokemonTypeMap[pokemonName];
+    return self.pokemonData[pokemonName][@"types"];
 }
 
 - (NSArray *)names {
-    return [[self.pokemonTypeMap allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    return [[self.pokemonData allKeys] sortedArrayUsingSelector:@selector(compare:)];
 }
 
 - (NSArray *)namesMatching:(NSString *)filter {

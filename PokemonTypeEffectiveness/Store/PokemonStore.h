@@ -7,7 +7,7 @@
 
 - (NSArray *)names;
 
-@property(nonatomic, strong) NSDictionary *pokemonTypeMap;
+@property(nonatomic, strong) NSDictionary *pokemonData;
 
 - (NSArray *)namesMatching:(NSString *)name;
 @end
