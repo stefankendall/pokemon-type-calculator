@@ -1,12 +1,8 @@
 #import "PokemonTypeViewController.h"
-#import "InfoCell.h"
-#import "PokemonStore.h"
-#import "TypeEffectivenessCell.h"
-#import "TypeCalculator.h"
 #import "TypesDatasource.h"
 #import "StatsDatasource.h"
 
-@interface PokemonTypeViewController()
+@interface PokemonTypeViewController ()
 @property(nonatomic) BOOL showingTypes;
 @property(nonatomic, strong) TypesDatasource *typesDatasource;
 @property(nonatomic, strong) StatsDatasource *statsDatasource;
@@ -27,7 +23,7 @@
 }
 
 - (void)changeToTypesOrStats {
-    if( self.showingTypes ){
+    if (self.showingTypes) {
         [self.tableView setDataSource:self.typesDatasource];
         [self.tableView setDelegate:self.typesDatasource];
     }
