@@ -1,6 +1,7 @@
 #import "PokemonTypeViewController.h"
 #import "TypesDatasource.h"
 #import "StatsDatasource.h"
+#import "PokemonListViewController.h"
 
 @interface PokemonTypeViewController ()
 @property(nonatomic) BOOL showingTypes;
@@ -14,8 +15,10 @@
     self.showingTypes = YES;
 
     self.typesDatasource = [TypesDatasource new];
-    self.statsDatasource = [StatsDatasource new];
     self.typesDatasource.pokemon = self.pokemon;
+    self.typesDatasource.megaTransitionDelegate = self;
+
+    self.statsDatasource = [StatsDatasource new];
     self.statsDatasource.pokemon = self.pokemon;
 
     [self changeToTypesOrStats];
@@ -38,6 +41,11 @@
 - (IBAction)statsButtonTapped:(id)sender {
     self.showingTypes = !self.showingTypes;
     [self changeToTypesOrStats];
+}
+
+- (void)setMega:(NSString *)mega {
+    [self.listViewController setMega:mega];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 @end

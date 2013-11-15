@@ -13,6 +13,14 @@
     [self.searchBar setDelegate:self];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    if (self.mega) {
+        self.tappedPokemonName = self.mega;
+        self.mega = nil;
+        [self performSegueWithIdentifier:@"showTypeMatchup" sender:self];
+    }
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[self pokemonNames] count];
 }
@@ -52,11 +60,12 @@
     if ([[segue identifier] isEqualToString:@"showTypeMatchup"]) {
         PokemonTypeViewController *typeController = [segue destinationViewController];
         [typeController setPokemon:self.tappedPokemonName];
+        [typeController setListViewController:self];
     }
 }
 
 - (void)searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller {
-    if (![self.tableView.subviews containsObject: self.searchBar]) {
+    if (![self.tableView.subviews containsObject:self.searchBar]) {
         [self.tableView insertSubview:self.searchBar aboveSubview:self.tableView];
     }
 }

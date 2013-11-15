@@ -1,6 +1,11 @@
-@interface TypesDatasource : NSObject<UITableViewDataSource, UITableViewDelegate>
+@class PokemonTypeViewController;
+@protocol MegaTransitionDelegate;
+
+@interface TypesDatasource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) NSString *pokemon;
+
+@property(nonatomic, strong) NSObject <MegaTransitionDelegate> *megaTransitionDelegate;
 
 - (NSInteger)superEffectiveSection;
 

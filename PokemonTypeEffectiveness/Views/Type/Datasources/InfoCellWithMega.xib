@@ -13,30 +13,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fire | Flying" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NaS-uR-7s6">
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fire | Flying" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NaS-uR-7s6">
                         <rect key="frame" x="87" y="11" width="213" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="213" id="fKd-aF-TpF"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Types" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-lr-hMf">
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Types" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-lr-hMf">
                         <rect key="frame" x="20" y="11" width="59" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zk-hh-cc8">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zk-hh-cc8">
                         <rect key="frame" x="20" y="40" width="53" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Mega X">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-Wr-Sr1">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-Wr-Sr1">
                         <rect key="frame" x="87" y="40" width="53" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Mega Y">
@@ -45,11 +42,16 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="centerY" secondItem="NaS-uR-7s6" secondAttribute="centerY" id="f11-AP-M7j"/>
-                    <constraint firstItem="NaS-uR-7s6" firstAttribute="leading" secondItem="vpe-lr-hMf" secondAttribute="trailing" constant="8" symbolic="YES" id="fLO-C7-4KA"/>
-                    <constraint firstItem="vpe-lr-hMf" firstAttribute="leading" secondItem="RX9-79-KWr" secondAttribute="leading" constant="20" symbolic="YES" id="j5f-uj-BPo"/>
-                    <constraint firstAttribute="trailing" secondItem="NaS-uR-7s6" secondAttribute="trailing" constant="20" symbolic="YES" id="oeV-ig-rG3"/>
-                    <constraint firstItem="vpe-lr-hMf" firstAttribute="baseline" secondItem="NaS-uR-7s6" secondAttribute="baseline" id="xyB-wj-qW1"/>
+                    <constraint firstItem="ecn-Wr-Sr1" firstAttribute="baseline" secondItem="1zk-hh-cc8" secondAttribute="baseline" id="DHg-hI-6GF"/>
+                    <constraint firstItem="NaS-uR-7s6" firstAttribute="baseline" secondItem="vpe-lr-hMf" secondAttribute="baseline" id="Rum-iA-1TW"/>
+                    <constraint firstItem="vpe-lr-hMf" firstAttribute="leading" secondItem="RX9-79-KWr" secondAttribute="leading" constant="20" symbolic="YES" id="WB0-T6-yWl"/>
+                    <constraint firstItem="vpe-lr-hMf" firstAttribute="top" secondItem="RX9-79-KWr" secondAttribute="top" constant="11" id="ZCc-SM-tCq"/>
+                    <constraint firstItem="1zk-hh-cc8" firstAttribute="leading" secondItem="vpe-lr-hMf" secondAttribute="leading" id="aiB-gB-OC9"/>
+                    <constraint firstItem="NaS-uR-7s6" firstAttribute="leading" secondItem="ecn-Wr-Sr1" secondAttribute="leading" id="e3M-Xy-6SY"/>
+                    <constraint firstItem="NaS-uR-7s6" firstAttribute="leading" secondItem="vpe-lr-hMf" secondAttribute="trailing" constant="8" symbolic="YES" id="jFT-5U-4Tn"/>
+                    <constraint firstAttribute="trailing" secondItem="NaS-uR-7s6" secondAttribute="trailing" constant="20" symbolic="YES" id="lnB-B2-383"/>
+                    <constraint firstItem="ecn-Wr-Sr1" firstAttribute="leading" secondItem="1zk-hh-cc8" secondAttribute="trailing" constant="14" id="wAE-ue-BdP"/>
+                    <constraint firstItem="1zk-hh-cc8" firstAttribute="top" secondItem="vpe-lr-hMf" secondAttribute="bottom" constant="8" symbolic="YES" id="z3j-Ds-9fA"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

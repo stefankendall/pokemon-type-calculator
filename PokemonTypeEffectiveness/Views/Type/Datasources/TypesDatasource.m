@@ -5,6 +5,7 @@
 #import "InfoCell.h"
 #import "PokemonTypeViewController.h"
 #import "InfoCellWithMega.h"
+#import "MegaTransitionDelegate.h"
 
 int const INFO_SECTION = 0;
 
@@ -100,6 +101,9 @@ int const INFO_SECTION = 0;
                 cell = [InfoCellWithMega create];
             }
 
+            [cell setMegas: megas];
+            [cell.mega1 addTarget:self action:@selector(mega1Tapped) forControlEvents:UIControlEventTouchUpInside];
+            [cell.mega2 addTarget:self action:@selector(mega2Tapped) forControlEvents:UIControlEventTouchUpInside];
             [cell setPokemonTypes:[[PokemonStore instance] typesFor:self.pokemon]];
             return cell;
         }
@@ -124,6 +128,18 @@ int const INFO_SECTION = 0;
         [cell setType:type withMultipler:effectiveness[type]];
         return cell;
     }
+}
+
+- (void)mega1Tapped {
+    [self transitionTo:[[PokemonStore instance] megasFor:self.pokemon][0]];
+}
+
+- (void)mega2Tapped {
+    [self transitionTo:[[PokemonStore instance] megasFor:self.pokemon][1]];
+}
+
+- (void)transitionTo:(NSString *)mega {
+    [[self megaTransitionDelegate] setMega:mega];
 }
 
 - (NSArray *)superEffectiveTypes {

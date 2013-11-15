@@ -101,6 +101,7 @@
 		54590B58E8F4F5A17BA84CAE /* InfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCell.m; sourceTree = "<group>"; };
 		54590B9AF4FDC44878BFBD98 /* TypeCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeCalculator.m; sourceTree = "<group>"; };
 		54590BCCAA2E0209311AC015 /* StatsDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsDatasource.m; sourceTree = "<group>"; };
+		54590C1143E8B71B14131549 /* MegaTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MegaTransitionDelegate.h; sourceTree = "<group>"; };
 		54590C350935D6F1C77688B7 /* InfoCellWithMega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellWithMega.h; sourceTree = "<group>"; };
 		54590C9BC521CFFA0CE07E34 /* StatsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsCell.xib; sourceTree = "<group>"; };
 		54590D0F199D87A0247D61B3 /* StatsDatasourceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsDatasourceTests.h; sourceTree = "<group>"; };
@@ -229,6 +230,7 @@
 				54590A5E172D9553A5CA9542 /* TypeEffectivenessCell.h */,
 				54590FE8FA388C87F68CBC1B /* TypeEffectivenessCell.xib */,
 				54590410481AC9A7B4B5F372 /* Datasources */,
+				54590C1143E8B71B14131549 /* MegaTransitionDelegate.h */,
 			);
 			path = Type;
 			sourceTree = "<group>";
