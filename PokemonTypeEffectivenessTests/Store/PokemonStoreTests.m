@@ -3,7 +3,7 @@
 
 @implementation PokemonStoreTests
 
--(void) setup {
+- (void)setup {
     [[PokemonStore instance] load];
 }
 
@@ -26,6 +26,13 @@
 - (void)testFiltersCaseInsensitive {
     NSArray *filteredList = [[PokemonStore instance] namesMatching:@"abra"];
     XCTAssertTrue([filteredList containsObject:@"Abra"]);
+}
+
+- (void)testFindsMegas {
+    NSArray *charizardMegas = @[@"Mega Charizard X", @"Mega Charizard Y"];
+    XCTAssertEqualObjects([[PokemonStore instance] megasFor:@"Charizard"], charizardMegas);
+    NSArray *bidoofMegas = @[];
+    XCTAssertEqualObjects([[PokemonStore instance] megasFor:@"Bidoof"], bidoofMegas);
 }
 
 @end

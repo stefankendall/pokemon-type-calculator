@@ -12,4 +12,6 @@
 - (NSArray *)namesMatching:(NSString *)name;
 
 - (NSDictionary *)statsFor:(NSString *)name;
+
+- (NSArray *)megasFor:(NSString *)pokemon;
 @end

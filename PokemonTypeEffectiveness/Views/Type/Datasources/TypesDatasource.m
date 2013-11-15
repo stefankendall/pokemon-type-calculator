@@ -4,6 +4,7 @@
 #import "TypeEffectivenessCell.h"
 #import "InfoCell.h"
 #import "PokemonTypeViewController.h"
+#import "InfoCellWithMega.h"
 
 int const INFO_SECTION = 0;
 
@@ -83,13 +84,25 @@ int const INFO_SECTION = 0;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([indexPath section] == INFO_SECTION) {
-        InfoCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(InfoCell.class)];
-        if (!cell) {
-            cell = [InfoCell create];
-        }
+        NSArray *megas = [[PokemonStore instance] megasFor: self.pokemon];
+        if([megas count] == 0){
+            InfoCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(InfoCell.class)];
+            if (!cell) {
+                cell = [InfoCell create];
+            }
 
-        [cell setPokemonTypes:[[PokemonStore instance] typesFor:self.pokemon]];
-        return cell;
+            [cell setPokemonTypes:[[PokemonStore instance] typesFor:self.pokemon]];
+            return cell;
+        }
+        else {
+            InfoCellWithMega *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(InfoCellWithMega.class)];
+            if (!cell) {
+                cell = [InfoCellWithMega create];
+            }
+
+            [cell setPokemonTypes:[[PokemonStore instance] typesFor:self.pokemon]];
+            return cell;
+        }
     }
     else {
         TypeEffectivenessCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(TypeEffectivenessCell.class)];

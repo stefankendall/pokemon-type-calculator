@@ -1,6 +1,7 @@
 #import "TypesDatasourceTests.h"
 #import "PokemonStore.h"
 #import "TypesDatasource.h"
+#import "InfoCellWithMega.h"
 
 @implementation TypesDatasourceTests
 
@@ -64,6 +65,17 @@
     XCTAssertEqual([datasource tableView:nil numberOfRowsInSection:immuneSection], 1);
     NSInteger notEffectiveSection = [datasource notEffectiveSection];
     XCTAssertEqual([datasource tableView:nil numberOfRowsInSection:notEffectiveSection], 8);
+}
+
+- (void)testHasMegaCellForPokemonWithMega {
+    TypesDatasource *datasource = [TypesDatasource new];
+    [datasource setPokemon:@"Bidoof"];
+    UITableViewCell *cell = [datasource tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    XCTAssertFalse([cell isKindOfClass:InfoCellWithMega.class]);
+
+    [datasource setPokemon:@"Charizard"];
+    cell = [datasource tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    XCTAssertTrue([cell isKindOfClass:InfoCellWithMega.class]);
 }
 
 @end

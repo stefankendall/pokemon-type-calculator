@@ -46,4 +46,9 @@
     }]];
 }
 
+- (NSArray *)megasFor:(NSString *)pokemon {
+    NSString *megaName = [@"Mega " stringByAppendingString:pokemon];
+    return [self namesMatching:megaName];
+}
+
 @end
