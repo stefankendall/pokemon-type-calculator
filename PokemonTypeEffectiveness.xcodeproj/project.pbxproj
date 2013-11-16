@@ -378,7 +378,7 @@
 						};
 					};
 					020C511B18131D20005CA791 = {
-						TestTargetID = 020C510018131D20005CA791 /* PokemonTypeEffectiveness */;
+						TestTargetID = 020C510018131D20005CA791;
 					};
 				};
 			};
@@ -616,6 +616,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "${inherited}/**";
 				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "Quick Attack";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
@@ -642,6 +643,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "${inherited}/**";
 				INFOPLIST_FILE = "PokemonTypeEffectiveness/PokemonTypeEffectiveness-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "Quick Attack";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
