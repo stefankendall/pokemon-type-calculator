@@ -2,6 +2,7 @@
 #import "StatsViewController.h"
 #import "StatsCell.h"
 #import "TestHelper.h"
+#import "StatsCompareCell.h"
 
 @implementation StatsViewControllerTests
 
@@ -16,6 +17,13 @@
     XCTAssertEqualObjects(hp.value.text, @"78");
     XCTAssertEqualObjects(attack.label.text, @"Attack");
     XCTAssertEqualObjects(attack.value.text, @"84");
+}
+
+- (void)testUsesCompareCellsWhenComparing {
+    StatsViewController *controller = (StatsViewController *) [TestHelper controllerForId:@"stats"];
+    [controller setComparingPokemon:@"Aegislash"];
+    UITableViewCell *cell = [controller tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    XCTAssertTrue([cell isKindOfClass:StatsCompareCell.class]);
 }
 
 @end
