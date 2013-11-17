@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PokemonStore.h"
 #import "SKProductStore.h"
+#import "MyPokemonStore.h"
 
 @implementation AppDelegate
 
@@ -16,7 +17,19 @@
     [[PokemonStore instance] load];
     [[SKProductStore instance] loadProducts:^{
     }];
+
+    [[NSNotificationCenter defaultCenter]
+            addObserver: self
+               selector: @selector (storeDidChange:)
+                   name: NSUbiquitousKeyValueStoreDidChangeExternallyNotification
+                 object: [NSUbiquitousKeyValueStore defaultStore]];
+
+    [[NSUbiquitousKeyValueStore defaultStore] synchronize];
+    [[MyPokemonStore instance] load];
     return YES;
+}
+
+- (void)storeDidChange:(id)storeDidChange {
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -1,5 +1,6 @@
 #import "MyPokemonViewController.h"
 #import "AddCell.h"
+#import "MyPokemonStore.h"
 #import <ViewDeck/IIViewDeckController.h>
 
 @implementation MyPokemonViewController
@@ -7,13 +8,17 @@
 const int ROWS_SECTION = 0;
 const int ADD_SECTION = 1;
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == ROWS_SECTION) {
-        return 0;
+        return [[[MyPokemonStore instance] all] count];
     }
     else {
         return 1;
@@ -35,8 +40,28 @@ const int ADD_SECTION = 1;
         return cell;
     }
     else {
-        return nil;
+        NSString *pokemon = [[MyPokemonStore instance] all][(NSUInteger) [indexPath row]];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyPokemonCell"];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyPokemonCell"];
+        }
+        [cell.textLabel setText:pokemon];
+        return cell;
     }
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSString *pokemon = [[MyPokemonStore instance] all][(NSUInteger) [indexPath row]];
+        [[MyPokemonStore instance] remove:pokemon];
+    }
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([indexPath section] == ADD_SECTION) {
+        return UITableViewCellEditingStyleNone;
+    }
+    return UITableViewCellEditingStyleDelete;
 }
 
 

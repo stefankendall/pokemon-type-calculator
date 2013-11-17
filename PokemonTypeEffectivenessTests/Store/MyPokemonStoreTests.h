@@ -1,0 +1,2 @@
+@interface MyPokemonStoreTests : XCTestCase
+@end
