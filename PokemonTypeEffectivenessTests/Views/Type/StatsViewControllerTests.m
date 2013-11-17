@@ -21,9 +21,13 @@
 
 - (void)testUsesCompareCellsWhenComparing {
     StatsViewController *controller = (StatsViewController *) [TestHelper controllerForId:@"stats"];
+    [controller setPokemon:@"Scizor"];
     [controller setComparingPokemon:@"Aegislash"];
-    UITableViewCell *cell = [controller tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    StatsCompareCell *cell = (StatsCompareCell *) [controller tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     XCTAssertTrue([cell isKindOfClass:StatsCompareCell.class]);
+    XCTAssertEqualObjects([[cell label] text], @"HP");
+    XCTAssertEqualObjects([[cell value1] text], @"70");
+    XCTAssertEqualObjects([[cell value2] text], @"60");
 }
 
 @end
