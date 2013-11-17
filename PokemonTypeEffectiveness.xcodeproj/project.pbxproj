@@ -28,7 +28,6 @@
 		545903331E8554BC908BEDDA /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB7D6ECDEF26F133B30 /* CompareViewController.m */; };
 		5459035F46B49F0E6AE941DF /* InfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590309F6E2A4F7535E66AA /* InfoCell.m */; };
 		545903B61B737D9C1799DB9B /* TypeEffectivenessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459056198DE1C35C838020F /* TypeEffectivenessCell.m */; };
-		545903E7C84F0A76C2B97895 /* StatsCompareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545907FDCC2DF3DCDCADB095 /* StatsCompareCell.m */; };
 		54590489179B838898B9AD6A /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902788B91AB8B66894EA1 /* TestHelper.m */; };
 		545904CA7C91ACA87FF524DB /* StatsCompareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545902E51CADE28BABD5E81F /* StatsCompareCell.xib */; };
 		545905F84B35A64BA4BE53C2 /* TypeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B9AF4FDC44878BFBD98 /* TypeCalculator.m */; };
@@ -37,6 +36,7 @@
 		54590959BAAE8495B14E1232 /* PokemonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A96C2BBBF828BED72F5 /* PokemonStore.m */; };
 		545909E8A028C8D9258ADC30 /* PokemonStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459088463E7F731AF419B5D /* PokemonStoreTests.m */; };
 		54590A22F785C98B24D5144C /* PokemonTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A9B04D54EF541D45CF8 /* PokemonTypeViewController.m */; };
+		54590A73B21EEE8BEF19F502 /* StatsCompareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CF21BEB3BFDA582A301 /* StatsCompareCell.m */; };
 		54590A9FE94983E50728DA86 /* InfoCellWithMega.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590679373F4BBF9D7432A1 /* InfoCellWithMega.xib */; };
 		54590B668174E464D9C21339 /* StatsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908E076C3C6BDB28108DE /* StatsCell.m */; };
 		54590D71F74A3F2B1F6342CB /* TypeCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590264EB6F876127D839D6 /* TypeCalculatorTests.m */; };
@@ -86,7 +86,6 @@
 		545902737DEE083CAD3A8D39 /* InfoCellWithMega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellWithMega.h; sourceTree = "<group>"; };
 		545902788B91AB8B66894EA1 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		5459029D9F65EEFC2FCA827F /* PokemonStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonStoreTests.h; sourceTree = "<group>"; };
-		545902D39BD994F529BFAB3D /* StatsCompareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsCompareCell.h; sourceTree = "<group>"; };
 		545902D7C447FFEA28D6793F /* CompareProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareProtocol.h; sourceTree = "<group>"; };
 		545902E51CADE28BABD5E81F /* StatsCompareCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsCompareCell.xib; sourceTree = "<group>"; };
 		545902EA93F6EE3C83207F23 /* CompareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareViewController.h; sourceTree = "<group>"; };
@@ -102,7 +101,6 @@
 		54590679373F4BBF9D7432A1 /* InfoCellWithMega.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCellWithMega.xib; sourceTree = "<group>"; };
 		545906A812AA6DEB7859BDC5 /* TypeCalculatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeCalculatorTests.h; sourceTree = "<group>"; };
 		54590731E990B6FD7A8E609D /* TypeEffectivenessCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeEffectivenessCell.h; sourceTree = "<group>"; };
-		545907FDCC2DF3DCDCADB095 /* StatsCompareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsCompareCell.m; sourceTree = "<group>"; };
 		54590831D4EE73EC741FA609 /* StatsViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewControllerTests.h; sourceTree = "<group>"; };
 		5459088463E7F731AF419B5D /* PokemonStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonStoreTests.m; sourceTree = "<group>"; };
 		545908E076C3C6BDB28108DE /* StatsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsCell.m; sourceTree = "<group>"; };
@@ -114,6 +112,8 @@
 		54590B9AF4FDC44878BFBD98 /* TypeCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeCalculator.m; sourceTree = "<group>"; };
 		54590BFA55197566F3ACF94B /* InfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCell.h; sourceTree = "<group>"; };
 		54590C1143E8B71B14131549 /* MegaTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MegaTransitionDelegate.h; sourceTree = "<group>"; };
+		54590CB2B22F5D172F48BE91 /* StatsCompareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsCompareCell.h; sourceTree = "<group>"; };
+		54590CF21BEB3BFDA582A301 /* StatsCompareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsCompareCell.m; sourceTree = "<group>"; };
 		54590D1524DB11F9E77755A0 /* PokemonTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonTypeViewController.h; sourceTree = "<group>"; };
 		54590D17DDF91959618CAC1E /* StatsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsCell.xib; sourceTree = "<group>"; };
 		54590D41B5541C828AAF6EDF /* TypeCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeCalculator.h; sourceTree = "<group>"; };
@@ -303,9 +303,9 @@
 				54590EB7D6ECDEF26F133B30 /* CompareViewController.m */,
 				545902EA93F6EE3C83207F23 /* CompareViewController.h */,
 				545902D7C447FFEA28D6793F /* CompareProtocol.h */,
-				545907FDCC2DF3DCDCADB095 /* StatsCompareCell.m */,
-				545902D39BD994F529BFAB3D /* StatsCompareCell.h */,
 				545902E51CADE28BABD5E81F /* StatsCompareCell.xib */,
+				54590CF21BEB3BFDA582A301 /* StatsCompareCell.m */,
+				54590CB2B22F5D172F48BE91 /* StatsCompareCell.h */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -492,7 +492,7 @@
 				54590D7693D546651C0F50E2 /* InfoCellWithMega.m in Sources */,
 				54590B668174E464D9C21339 /* StatsCell.m in Sources */,
 				545903331E8554BC908BEDDA /* CompareViewController.m in Sources */,
-				545903E7C84F0A76C2B97895 /* StatsCompareCell.m in Sources */,
+				54590A73B21EEE8BEF19F502 /* StatsCompareCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
