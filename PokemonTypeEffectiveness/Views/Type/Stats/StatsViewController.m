@@ -3,6 +3,7 @@
 #import "StatsCell.h"
 #import "StatsCompareCell.h"
 #import "CompareViewController.h"
+#import "ComparePokemonHeader.h"
 
 @implementation StatsViewController
 
@@ -72,6 +73,23 @@
 - (void)compareTo:(NSString *)pokemon {
     self.comparingPokemon = pokemon;
     [self.tableView reloadData];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (self.comparingPokemon) {
+        ComparePokemonHeader *header = [ComparePokemonHeader create];
+        [header.pokemon1 setText: self.pokemon];
+        [header.pokemon2 setText: self.comparingPokemon];
+        return header;
+    }
+    else {
+        return [UIView new];
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    UIView *view = [self tableView:tableView viewForHeaderInSection:section];
+    return view.frame.size.height;
 }
 
 @end
