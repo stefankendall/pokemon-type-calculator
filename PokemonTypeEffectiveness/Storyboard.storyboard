@@ -91,6 +91,58 @@
             <point key="canvasLocation" x="574" y="-587"/>
         </scene>
         <!--Navigation Controller-->
+        <scene sceneID="jgP-cd-VKj">
+            <objects>
+                <navigationController storyboardIdentifier="myPokemonNav" definesPresentationContext="YES" id="JdO-W9-LdX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vRf-aw-6KR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IzE-FG-9Ag" kind="relationship" relationship="rootViewController" id="Wqr-oO-n8x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4J-f4-FN6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="-587"/>
+        </scene>
+        <!--My Pokemon View Controller - My Pokemon-->
+        <scene sceneID="9US-m9-FZR">
+            <objects>
+                <tableViewController storyboardIdentifier="myPokemon" id="IzE-FG-9Ag" customClass="MyPokemonViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uaQ-ts-NM6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uOx-2J-L6M">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uOx-2J-L6M" id="j4o-Ly-P8X">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IzE-FG-9Ag" id="sqs-dG-bQz"/>
+                            <outlet property="delegate" destination="IzE-FG-9Ag" id="FBZ-gA-5jt"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="My Pokemon" id="wjf-tl-eIz">
+                        <barButtonItem key="leftBarButtonItem" image="ButtonMenu.png" id="T2R-7k-TgQ">
+                            <connections>
+                                <action selector="revealSidebar:" destination="IzE-FG-9Ag" id="ZYt-mk-Qoq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXi-83-upg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325" y="-587"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="MVJ-ct-yRH">
             <objects>
                 <navigationController storyboardIdentifier="listNav" definesPresentationContext="YES" id="Ihy-Or-JcP" sceneMemberID="viewController">
