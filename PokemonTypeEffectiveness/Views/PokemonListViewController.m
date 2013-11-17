@@ -1,6 +1,7 @@
 #import "PokemonListViewController.h"
 #import "PokemonStore.h"
 #import "PokemonTypeViewController.h"
+#import <ViewDeck/IIViewDeckController.h>
 
 @interface PokemonListViewController ()
 
@@ -72,6 +73,10 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+- (IBAction)revealSidebar:(id)sender {
+    [self.viewDeckController toggleLeftViewAnimated:YES];
 }
 
 @end

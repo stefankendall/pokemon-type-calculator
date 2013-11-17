@@ -2,15 +2,18 @@ PODS:
   - CTCustomTableViewCell (2)
   - IAPManager (0.2.2)
   - MRCEnumerable (0.1.1)
+  - ViewDeck (2.2.11)
 
 DEPENDENCIES:
   - CTCustomTableViewCell
   - IAPManager
   - MRCEnumerable
+  - ViewDeck (= 2.2.11)
 
 SPEC CHECKSUMS:
   CTCustomTableViewCell: d3a141b32843da29aefb2157bbc143dd210b05f3
   IAPManager: fb36017e64524e2ecb9ae2101daaa83165cc5211
   MRCEnumerable: d0a1f19dd32d9be3f2a53258710a2825a28c3ab3
+  ViewDeck: b5eddc8559b0e47259ab7addbf2de6768061f139
 
 COCOAPODS: 0.28.0
