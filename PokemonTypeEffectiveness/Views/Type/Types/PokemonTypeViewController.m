@@ -149,6 +149,7 @@ const int INFO_SECTION = 0;
 
 - (void)transitionTo:(NSString *)mega {
     [self.listViewController setMega:mega];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 - (NSArray *)superEffectiveTypes {

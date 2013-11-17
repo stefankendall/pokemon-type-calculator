@@ -1,8 +1,16 @@
-#import "StatsDatasource.h"
-#import "StatsCell.h"
+#import "StatsViewController.h"
 #import "PokemonStore.h"
+#import "StatsCell.h"
 
-@implementation StatsDatasource
+@implementation StatsViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    self.comparingPokemon = nil;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 6;
@@ -33,6 +41,11 @@
 
 - (NSDictionary*) stats {
     return [[PokemonStore instance] statsFor: self.pokemon];
+}
+
+- (void)compareTo:(NSString *)pokemon {
+    self.comparingPokemon = pokemon;
+    [self.tableView reloadData];
 }
 
 @end
