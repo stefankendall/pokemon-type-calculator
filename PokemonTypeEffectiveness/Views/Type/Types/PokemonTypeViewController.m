@@ -15,6 +15,16 @@ const int INFO_SECTION = 0;
     self.navigationItem.title = self.pokemon;
 }
 
+- (void)viewDidLoad {
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0) {
+        self.navigationController.navigationBar.topItem.backBarButtonItem = [[UIBarButtonItem alloc]
+                initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+
+
+    }
+}
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     StatsViewController *statsController = [segue destinationViewController];
     statsController.pokemon = self.pokemon;

@@ -40,6 +40,7 @@
 		54590A73B21EEE8BEF19F502 /* StatsCompareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CF21BEB3BFDA582A301 /* StatsCompareCell.m */; };
 		54590A9FE94983E50728DA86 /* InfoCellWithMega.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590679373F4BBF9D7432A1 /* InfoCellWithMega.xib */; };
 		54590B668174E464D9C21339 /* StatsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908E076C3C6BDB28108DE /* StatsCell.m */; };
+		54590BA74F43B52291221935 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5459031748C1BAA007785097 /* QuartzCore.framework */; };
 		54590CCCD0423642D1AAF51E /* ComparePokemonHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459048CF2A27B775B417077 /* ComparePokemonHeader.m */; };
 		54590D71F74A3F2B1F6342CB /* TypeCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590264EB6F876127D839D6 /* TypeCalculatorTests.m */; };
 		54590D7693D546651C0F50E2 /* InfoCellWithMega.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590412E18210E245EE73F8 /* InfoCellWithMega.m */; };
@@ -93,6 +94,7 @@
 		545902EA93F6EE3C83207F23 /* CompareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareViewController.h; sourceTree = "<group>"; };
 		545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonListViewController.m; sourceTree = "<group>"; };
 		54590309F6E2A4F7535E66AA /* InfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCell.m; sourceTree = "<group>"; };
+		5459031748C1BAA007785097 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		545903319773F2788A5B9C33 /* SKProductStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKProductStore.h; sourceTree = "<group>"; };
 		54590398660F9F4E8380714A /* StatsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsCell.h; sourceTree = "<group>"; };
 		545903F00B45F546A4EDA019 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				020C510918131D20005CA791 /* UIKit.framework in Frameworks */,
 				0255078B18140D41003B4CD6 /* StoreKit.framework in Frameworks */,
 				020C510518131D20005CA791 /* Foundation.framework in Frameworks */,
+				54590BA74F43B52291221935 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +189,7 @@
 				020C510818131D20005CA791 /* UIKit.framework */,
 				020C511D18131D20005CA791 /* XCTest.framework */,
 				9DFA38C800B34C7798047A63 /* libPods.a */,
+				5459031748C1BAA007785097 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
