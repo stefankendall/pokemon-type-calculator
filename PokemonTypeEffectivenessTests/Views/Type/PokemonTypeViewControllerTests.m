@@ -1,16 +1,17 @@
-#import "TypesDatasourceTests.h"
+#import "PokemonTypeViewControllerTests.h"
 #import "PokemonStore.h"
-#import "TypesDatasource.h"
+#import "PokemonTypeViewController.h"
 #import "InfoCellWithMega.h"
+#import "TestHelper.h"
 
-@implementation TypesDatasourceTests
+@implementation PokemonTypeViewControllerTests
 
-- (void)setup {
+- (void)setUp {
     [[PokemonStore instance] load];
 }
 
 - (void)testHasSectionsForSuperNotEffectiveAndImmune {
-    TypesDatasource *datasource = [TypesDatasource new];
+    PokemonTypeViewController *datasource = (PokemonTypeViewController *) [TestHelper controllerForId: @"matchups"];
     [datasource setPokemon:@"Charizard"];
     XCTAssertEqual([datasource numberOfSectionsInTableView:nil], (NSInteger) 4);
     XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:1], @"Super Effective");
@@ -24,14 +25,14 @@
 }
 
 - (void)testSuperEffectiveTypes {
-    TypesDatasource *datasource = [TypesDatasource new];
+    PokemonTypeViewController *datasource = (PokemonTypeViewController *) [TestHelper controllerForId: @"matchups"];
     [datasource setPokemon:@"Scizor"];
     NSArray *expected = @[@"fire"];
     XCTAssertEqualObjects([datasource superEffectiveTypes], expected);
 }
 
 - (void)testNotEffectiveTypes {
-    TypesDatasource *datasource = [TypesDatasource new];
+    PokemonTypeViewController *datasource = (PokemonTypeViewController *) [TestHelper controllerForId: @"matchups"];
     [datasource setPokemon:@"Scizor"];
     NSArray *expected = @[
             @"bug",
@@ -47,7 +48,7 @@
 }
 
 - (void)testImmuneTypes {
-    TypesDatasource *datasource = [TypesDatasource new];
+    PokemonTypeViewController *datasource = (PokemonTypeViewController *) [TestHelper controllerForId: @"matchups"];
     [datasource setPokemon:@"Scizor"];
     NSArray *expected = @[
             @"poison"
@@ -56,7 +57,7 @@
 }
 
 - (void)testCreatesTypeCellsForPokemon {
-    TypesDatasource *datasource = [TypesDatasource new];
+    PokemonTypeViewController *datasource = (PokemonTypeViewController *) [TestHelper controllerForId: @"matchups"];
     [datasource setPokemon:@"Scizor"];
 
     NSInteger superEffectiveSection = [datasource superEffectiveSection];
@@ -68,7 +69,7 @@
 }
 
 - (void)testHasMegaCellForPokemonWithMega {
-    TypesDatasource *datasource = [TypesDatasource new];
+    PokemonTypeViewController *datasource = (PokemonTypeViewController *) [TestHelper controllerForId: @"matchups"];
     [datasource setPokemon:@"Bidoof"];
     UITableViewCell *cell = [datasource tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     XCTAssertFalse([cell isKindOfClass:InfoCellWithMega.class]);

@@ -4,10 +4,20 @@
 
 extern int const INFO_SECTION;
 
-@interface PokemonTypeViewController : UITableViewController<MegaTransitionDelegate>
+@interface PokemonTypeViewController : UITableViewController
 @property(nonatomic, copy) NSString *pokemon;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *statsButton;
 @property(nonatomic, strong) PokemonListViewController *listViewController;
 
-- (IBAction)statsButtonTapped:(id)sender;
+- (NSInteger)superEffectiveSection;
+
+- (NSInteger)immuneSection;
+
+- (NSInteger)notEffectiveSection;
+
+- (NSArray *)superEffectiveTypes;
+
+- (NSArray *)notEffectiveTypes;
+
+- (NSArray *)immuneTypes;
 @end

@@ -23,22 +23,23 @@
 		0275E4561814BF5300D8F421 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 0275E4551814BF5300D8F421 /* pokemon.json */; };
 		545900264B79DF065C45BB72 /* PokemonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */; };
 		5459004409A1B7C987BBC6BC /* TypeEffectivenessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545904D075E137D91F0CAA30 /* TypeEffectivenessCell.m */; };
+		545900A08D0B122D15DFEF51 /* PokemonTypeViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459044846D48B1A9B336B1A /* PokemonTypeViewControllerTests.m */; };
 		545900B593AB839C757CB4C9 /* PokemonTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902296C0DFBB5BE0F9F25 /* PokemonTypeViewController.m */; };
 		54590127D53C5594DB10E416 /* TypeEffectivenessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590FE8FA388C87F68CBC1B /* TypeEffectivenessCell.xib */; };
 		545901511E0E6BD35C828D97 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F964A9E1C7FE5FA5EAA /* TipViewController.m */; };
 		545902877B04E02D5D368D89 /* InfoCellWithMega.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590D26982CAD33CEDAAE2D /* InfoCellWithMega.xib */; };
 		5459032277C9DAEAA5FC2834 /* SKProductStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901EA628FBB831E432178 /* SKProductStore.m */; };
 		54590477CA6A5FC559147014 /* StatsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459048158B46E977549EB3D /* StatsCell.m */; };
+		54590489179B838898B9AD6A /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902788B91AB8B66894EA1 /* TestHelper.m */; };
+		545904B13C1B3E0DA59D46F5 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459078CEAD431661BE3AEC0 /* StatsViewController.m */; };
 		545905F84B35A64BA4BE53C2 /* TypeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B9AF4FDC44878BFBD98 /* TypeCalculator.m */; };
 		545905F9BBD5C9D01A913F92 /* InfoCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545904A9AC326189E2C3D8A7 /* InfoCellTests.m */; };
 		54590959BAAE8495B14E1232 /* PokemonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A96C2BBBF828BED72F5 /* PokemonStore.m */; };
 		54590973A2E638B2928CEECF /* StatsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590C9BC521CFFA0CE07E34 /* StatsCell.xib */; };
 		545909E8A028C8D9258ADC30 /* PokemonStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459088463E7F731AF419B5D /* PokemonStoreTests.m */; };
-		54590A4084811CE0879D5F67 /* TypesDatasourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590510039EF60632B483B3 /* TypesDatasourceTests.m */; };
-		54590AD8AF91F21E8314A302 /* TypesDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459065A46AD204EF4D1A22B /* TypesDatasource.m */; };
 		54590B06D70949BD6D955B72 /* InfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B58E8F4F5A17BA84CAE /* InfoCell.m */; };
 		54590D71F74A3F2B1F6342CB /* TypeCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590264EB6F876127D839D6 /* TypeCalculatorTests.m */; };
-		54590E4559BBB39E5107209A /* StatsDatasourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459056B3564C859F9152CD3 /* StatsDatasourceTests.m */; };
+		54590DAA40C9E392F3C6521D /* StatsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EA689B7DC077B563A9C /* StatsViewControllerTests.m */; };
 		54590F48C64DA5674E168C8B /* StatsDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BCCAA2E0209311AC015 /* StatsDatasource.m */; };
 		54590FE309DDE77141010B68 /* InfoCellWithMega.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459031EA01DD4CF3EEC1CC3 /* InfoCellWithMega.m */; };
 		54590FF6F91CF263DA7908AA /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545905B9538631015E2E6100 /* InfoCell.xib */; };
@@ -77,23 +78,26 @@
 		22E03E531D714C5285B1606F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		545901EA628FBB831E432178 /* SKProductStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKProductStore.m; sourceTree = "<group>"; };
 		545901EC2AD02010CF1A9E9D /* StatsDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsDatasource.h; sourceTree = "<group>"; };
+		54590203D44A6149D468FF0E /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		545902296C0DFBB5BE0F9F25 /* PokemonTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTypeViewController.m; sourceTree = "<group>"; };
 		54590264EB6F876127D839D6 /* TypeCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeCalculatorTests.m; sourceTree = "<group>"; };
+		545902788B91AB8B66894EA1 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		5459029D9F65EEFC2FCA827F /* PokemonStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonStoreTests.h; sourceTree = "<group>"; };
 		545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonListViewController.m; sourceTree = "<group>"; };
 		5459031EA01DD4CF3EEC1CC3 /* InfoCellWithMega.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCellWithMega.m; sourceTree = "<group>"; };
 		545903319773F2788A5B9C33 /* SKProductStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKProductStore.h; sourceTree = "<group>"; };
+		5459044846D48B1A9B336B1A /* PokemonTypeViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTypeViewControllerTests.m; sourceTree = "<group>"; };
 		5459048158B46E977549EB3D /* StatsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsCell.m; sourceTree = "<group>"; };
 		545904A9AC326189E2C3D8A7 /* InfoCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCellTests.m; sourceTree = "<group>"; };
 		545904D075E137D91F0CAA30 /* TypeEffectivenessCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeEffectivenessCell.m; sourceTree = "<group>"; };
-		54590510039EF60632B483B3 /* TypesDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypesDatasourceTests.m; sourceTree = "<group>"; };
-		5459056B3564C859F9152CD3 /* StatsDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsDatasourceTests.m; sourceTree = "<group>"; };
 		545905B9538631015E2E6100 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
-		5459065A46AD204EF4D1A22B /* TypesDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypesDatasource.m; sourceTree = "<group>"; };
 		545906A812AA6DEB7859BDC5 /* TypeCalculatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeCalculatorTests.h; sourceTree = "<group>"; };
-		545907B54C11EF051088100D /* TypesDatasourceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypesDatasourceTests.h; sourceTree = "<group>"; };
+		5459078CEAD431661BE3AEC0 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
+		54590831D4EE73EC741FA609 /* StatsViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewControllerTests.h; sourceTree = "<group>"; };
 		5459088463E7F731AF419B5D /* PokemonStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonStoreTests.m; sourceTree = "<group>"; };
+		545908E1D222EBA9815546E6 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
 		545908EAFA9E75CCF3EB5D8E /* PokemonTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonTypeViewController.h; sourceTree = "<group>"; };
+		545909AA8D3803A01DE1E527 /* PokemonTypeViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonTypeViewControllerTests.h; sourceTree = "<group>"; };
 		545909F752E01FF98C207B66 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		54590A5E172D9553A5CA9542 /* TypeEffectivenessCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeEffectivenessCell.h; sourceTree = "<group>"; };
 		54590A96C2BBBF828BED72F5 /* PokemonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonStore.m; sourceTree = "<group>"; };
@@ -104,12 +108,11 @@
 		54590C1143E8B71B14131549 /* MegaTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MegaTransitionDelegate.h; sourceTree = "<group>"; };
 		54590C350935D6F1C77688B7 /* InfoCellWithMega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellWithMega.h; sourceTree = "<group>"; };
 		54590C9BC521CFFA0CE07E34 /* StatsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsCell.xib; sourceTree = "<group>"; };
-		54590D0F199D87A0247D61B3 /* StatsDatasourceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsDatasourceTests.h; sourceTree = "<group>"; };
 		54590D26982CAD33CEDAAE2D /* InfoCellWithMega.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCellWithMega.xib; sourceTree = "<group>"; };
 		54590D41B5541C828AAF6EDF /* TypeCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeCalculator.h; sourceTree = "<group>"; };
 		54590EA2B8410E6C8EBD3FC0 /* PokemonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonListViewController.h; sourceTree = "<group>"; };
+		54590EA689B7DC077B563A9C /* StatsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewControllerTests.m; sourceTree = "<group>"; };
 		54590EC03527FA936388DA62 /* StatsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsCell.h; sourceTree = "<group>"; };
-		54590EDC88C3A0D08ED8EDE7 /* TypesDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypesDatasource.h; sourceTree = "<group>"; };
 		54590F5D540A6021BF4C0537 /* InfoCellTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellTests.h; sourceTree = "<group>"; };
 		54590F964A9E1C7FE5FA5EAA /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		54590FB10C7E24D845C777F3 /* PokemonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonStore.h; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				020C512418131D20005CA791 /* Supporting Files */,
 				545902D015B0AC6782A41C2D /* Store */,
 				5459095EAA92658497C38D03 /* Views */,
+				545902788B91AB8B66894EA1 /* TestHelper.m */,
+				54590203D44A6149D468FF0E /* TestHelper.h */,
 			);
 			path = PokemonTypeEffectivenessTests;
 			sourceTree = "<group>";
@@ -231,6 +236,8 @@
 				54590FE8FA388C87F68CBC1B /* TypeEffectivenessCell.xib */,
 				54590410481AC9A7B4B5F372 /* Datasources */,
 				54590C1143E8B71B14131549 /* MegaTransitionDelegate.h */,
+				5459078CEAD431661BE3AEC0 /* StatsViewController.m */,
+				545908E1D222EBA9815546E6 /* StatsViewController.h */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -251,7 +258,10 @@
 			children = (
 				545904A9AC326189E2C3D8A7 /* InfoCellTests.m */,
 				54590F5D540A6021BF4C0537 /* InfoCellTests.h */,
-				54590D9FF5E7F396B46CD978 /* Datasources */,
+				5459044846D48B1A9B336B1A /* PokemonTypeViewControllerTests.m */,
+				545909AA8D3803A01DE1E527 /* PokemonTypeViewControllerTests.h */,
+				54590EA689B7DC077B563A9C /* StatsViewControllerTests.m */,
+				54590831D4EE73EC741FA609 /* StatsViewControllerTests.h */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -259,8 +269,6 @@
 		54590410481AC9A7B4B5F372 /* Datasources */ = {
 			isa = PBXGroup;
 			children = (
-				5459065A46AD204EF4D1A22B /* TypesDatasource.m */,
-				54590EDC88C3A0D08ED8EDE7 /* TypesDatasource.h */,
 				54590BCCAA2E0209311AC015 /* StatsDatasource.m */,
 				545901EC2AD02010CF1A9E9D /* StatsDatasource.h */,
 				54590B223746CAFADAD5B5E5 /* InfoCell.h */,
@@ -282,17 +290,6 @@
 				545903C3127C92357AA5D7E2 /* Type */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		54590D9FF5E7F396B46CD978 /* Datasources */ = {
-			isa = PBXGroup;
-			children = (
-				54590510039EF60632B483B3 /* TypesDatasourceTests.m */,
-				545907B54C11EF051088100D /* TypesDatasourceTests.h */,
-				5459056B3564C859F9152CD3 /* StatsDatasourceTests.m */,
-				54590D0F199D87A0247D61B3 /* StatsDatasourceTests.h */,
-			);
-			path = Datasources;
 			sourceTree = "<group>";
 		};
 		54590F9D1A70F8857E530345 /* Views */ = {
@@ -378,7 +375,7 @@
 						};
 					};
 					020C511B18131D20005CA791 = {
-						TestTargetID = 020C510018131D20005CA791;
+						TestTargetID = 020C510018131D20005CA791 /* PokemonTypeEffectiveness */;
 					};
 				};
 			};
@@ -471,11 +468,11 @@
 				5459004409A1B7C987BBC6BC /* TypeEffectivenessCell.m in Sources */,
 				545901511E0E6BD35C828D97 /* TipViewController.m in Sources */,
 				5459032277C9DAEAA5FC2834 /* SKProductStore.m in Sources */,
-				54590AD8AF91F21E8314A302 /* TypesDatasource.m in Sources */,
 				54590F48C64DA5674E168C8B /* StatsDatasource.m in Sources */,
 				54590B06D70949BD6D955B72 /* InfoCell.m in Sources */,
 				54590477CA6A5FC559147014 /* StatsCell.m in Sources */,
 				54590FE309DDE77141010B68 /* InfoCellWithMega.m in Sources */,
+				545904B13C1B3E0DA59D46F5 /* StatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,8 +483,9 @@
 				545909E8A028C8D9258ADC30 /* PokemonStoreTests.m in Sources */,
 				545905F9BBD5C9D01A913F92 /* InfoCellTests.m in Sources */,
 				54590D71F74A3F2B1F6342CB /* TypeCalculatorTests.m in Sources */,
-				54590A4084811CE0879D5F67 /* TypesDatasourceTests.m in Sources */,
-				54590E4559BBB39E5107209A /* StatsDatasourceTests.m in Sources */,
+				545900A08D0B122D15DFEF51 /* PokemonTypeViewControllerTests.m in Sources */,
+				54590489179B838898B9AD6A /* TestHelper.m in Sources */,
+				54590DAA40C9E392F3C6521D /* StatsViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

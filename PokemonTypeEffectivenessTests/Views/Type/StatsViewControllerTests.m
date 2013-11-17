@@ -1,11 +1,12 @@
-#import "StatsDatasourceTests.h"
-#import "StatsDatasource.h"
+#import "StatsViewControllerTests.h"
+#import "StatsViewController.h"
 #import "StatsCell.h"
+#import "TestHelper.h"
 
-@implementation StatsDatasourceTests
+@implementation StatsViewControllerTests
 
 - (void)testSetsStatsForPokemon {
-    StatsDatasource *datasource = [StatsDatasource new];
+    StatsViewController *datasource = (StatsViewController *) [TestHelper controllerForId:@"stats"];
     datasource.pokemon = @"Charizard";
 
     StatsCell *hp = (StatsCell *) [datasource tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
