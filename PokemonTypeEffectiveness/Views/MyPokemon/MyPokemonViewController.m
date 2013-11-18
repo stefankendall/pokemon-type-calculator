@@ -54,6 +54,7 @@ const int ADD_SECTION = 1;
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         NSString *pokemon = [[MyPokemonStore instance] all][(NSUInteger) [indexPath row]];
         [[MyPokemonStore instance] remove:pokemon];
+        [self.tableView reloadData];
     }
 }
 

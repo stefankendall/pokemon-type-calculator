@@ -1,3 +1,2 @@
 @interface MyPokemonViewController : UITableViewController {}
-
 @end
