@@ -171,11 +171,17 @@
                             <outlet property="delegate" destination="z4j-ZJ-41j" id="amb-eb-xue"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Charizard" id="a49-nv-okk"/>
+                    <navigationItem key="navigationItem" title="Charizard" id="a49-nv-okk">
+                        <barButtonItem key="rightBarButtonItem" title="Stats" id="0JI-GE-Cmc">
+                            <connections>
+                                <segue destination="sHd-54-Ay3" kind="push" id="0j8-iD-18a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TaX-N4-GGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1713" y="-1245"/>
+            <point key="canvasLocation" x="2099" y="-587"/>
         </scene>
         <!--Add Pokemon View Controller - Add-->
         <scene sceneID="0iK-uC-Mqz">
@@ -568,4 +574,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="0j8-iD-18a"/>
+    </inferredMetricsTieBreakers>
 </document>
