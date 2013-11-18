@@ -12,6 +12,10 @@
 
 - (void)viewDidLoad {
     [self.searchBar setDelegate:self];
+
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0) {
+        [self.navigationItem setTitle:@"Choose"];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
