@@ -9,6 +9,8 @@ extern int const INFO_SECTION;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *statsButton;
 @property(nonatomic, strong) PokemonListViewController *listViewController;
 
+@property(nonatomic) BOOL hidesMega;
+
 - (NSInteger)superEffectiveSection;
 
 - (NSInteger)immuneSection;

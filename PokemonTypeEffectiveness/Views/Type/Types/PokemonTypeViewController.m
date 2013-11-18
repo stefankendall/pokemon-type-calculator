@@ -105,7 +105,7 @@ const int INFO_SECTION = 0;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([indexPath section] == INFO_SECTION) {
         NSArray *megas = [[PokemonStore instance] megasFor:self.pokemon];
-        if ([megas count] == 0) {
+        if ([megas count] == 0 || self.hidesMega) {
             InfoCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(InfoCell.class)];
             if (!cell) {
                 cell = [InfoCell create];

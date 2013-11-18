@@ -141,11 +141,41 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="rBF-kj-32h" kind="push" identifier="selectMyPokemon" id="fus-7C-2Gc"/>
+                        <segue destination="z4j-ZJ-41j" kind="push" identifier="typesForMyPokemon" id="D8F-6d-RCt"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXi-83-upg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1325" y="-587"/>
+        </scene>
+        <!--Pokemon Type View Controller - Charizard-->
+        <scene sceneID="xmZ-T5-qxp">
+            <objects>
+                <tableViewController id="z4j-ZJ-41j" customClass="PokemonTypeViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="AHd-KW-P4W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="maI-C3-Zu3">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="maI-C3-Zu3" id="Btu-Ul-ReZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="z4j-ZJ-41j" id="K2R-pH-4J0"/>
+                            <outlet property="delegate" destination="z4j-ZJ-41j" id="amb-eb-xue"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Charizard" id="a49-nv-okk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaX-N4-GGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="-1245"/>
         </scene>
         <!--Add Pokemon View Controller - Add-->
         <scene sceneID="0iK-uC-Mqz">

@@ -1,6 +1,7 @@
 #import "MyPokemonViewController.h"
 #import "AddCell.h"
 #import "MyPokemonStore.h"
+#import "PokemonTypeViewController.h"
 #import <ViewDeck/IIViewDeckController.h>
 
 @implementation MyPokemonViewController
@@ -29,6 +30,10 @@ const int ADD_SECTION = 1;
     if ([indexPath section] == ADD_SECTION) {
         [self performSegueWithIdentifier:@"selectMyPokemon" sender:self];
     }
+    else {
+        self.tappedPokemonName = [[MyPokemonStore instance] all][(NSUInteger) indexPath.row];
+        [self performSegueWithIdentifier:@"typesForMyPokemon" sender:self];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -45,6 +50,7 @@ const int ADD_SECTION = 1;
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyPokemonCell"];
         }
+        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
         [cell.textLabel setText:pokemon];
         return cell;
     }
@@ -65,6 +71,13 @@ const int ADD_SECTION = 1;
     return UITableViewCellEditingStyleDelete;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"typesForMyPokemon"]) {
+        PokemonTypeViewController *typeController = [segue destinationViewController];
+        [typeController setPokemon:self.tappedPokemonName];
+        [typeController setHidesMega:YES];
+    }
+}
 
 - (IBAction)revealSidebar:(id)sender {
     [self.viewDeckController toggleLeftViewAnimated:YES];
