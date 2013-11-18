@@ -71,10 +71,6 @@
     }
 }
 
-- (BOOL)prefersStatusBarHidden {
-    return YES;
-}
-
 - (IBAction)revealSidebar:(id)sender {
     [self.viewDeckController toggleLeftViewAnimated:YES];
 }

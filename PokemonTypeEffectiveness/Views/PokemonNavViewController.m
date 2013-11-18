@@ -3,6 +3,15 @@
 
 @implementation PokemonNavViewController
 
+- (void)viewDidLoad {
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+        [self.tableView setContentInset:UIEdgeInsetsMake(20,
+                self.tableView.contentInset.left,
+                self.tableView.contentInset.bottom,
+                self.tableView.contentInset.right)];
+    }
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
     NSDictionary *rowMapping = @{
