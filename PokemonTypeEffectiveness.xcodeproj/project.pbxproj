@@ -27,6 +27,7 @@
 		545901511E0E6BD35C828D97 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F964A9E1C7FE5FA5EAA /* TipViewController.m */; };
 		545901740158B49EBB2BB8AF /* PokemonNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CB37EC96B400CB92CF2 /* PokemonNavViewController.m */; };
 		545901C0DCCB443DE22A4459 /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590F3A14D6FB741C199994 /* 06-magnify@2x.png */; };
+		545902F1C5071B429197395F /* MyPokemonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E0C23EB349C81237192 /* MyPokemonListViewController.m */; };
 		5459032277C9DAEAA5FC2834 /* SKProductStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901EA628FBB831E432178 /* SKProductStore.m */; };
 		545903331E8554BC908BEDDA /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB7D6ECDEF26F133B30 /* CompareViewController.m */; };
 		5459035F46B49F0E6AE941DF /* InfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590309F6E2A4F7535E66AA /* InfoCell.m */; };
@@ -159,11 +160,13 @@
 		54590D17DDF91959618CAC1E /* StatsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsCell.xib; sourceTree = "<group>"; };
 		54590D41B5541C828AAF6EDF /* TypeCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeCalculator.h; sourceTree = "<group>"; };
 		54590D6D8286DBC849EA14A7 /* AddPokemonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPokemonViewController.h; sourceTree = "<group>"; };
+		54590E0C23EB349C81237192 /* MyPokemonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPokemonListViewController.m; sourceTree = "<group>"; };
 		54590EA2B8410E6C8EBD3FC0 /* PokemonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonListViewController.h; sourceTree = "<group>"; };
 		54590EA689B7DC077B563A9C /* StatsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewControllerTests.m; sourceTree = "<group>"; };
 		54590EB7D6ECDEF26F133B30 /* CompareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompareViewController.m; sourceTree = "<group>"; };
 		54590F3A14D6FB741C199994 /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify@2x.png"; sourceTree = "<group>"; };
 		54590F5D540A6021BF4C0537 /* InfoCellTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellTests.h; sourceTree = "<group>"; };
+		54590F82E1101AE173937E0B /* MyPokemonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPokemonListViewController.h; sourceTree = "<group>"; };
 		54590F964A9E1C7FE5FA5EAA /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		54590FB10C7E24D845C777F3 /* PokemonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonStore.h; sourceTree = "<group>"; };
 		9DFA38C800B34C7798047A63 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -385,6 +388,8 @@
 				545900FDEA155C2658DA1C4E /* AddCell.h */,
 				54590AEF26A02E8356914478 /* AddPokemonViewController.m */,
 				54590D6D8286DBC849EA14A7 /* AddPokemonViewController.h */,
+				54590E0C23EB349C81237192 /* MyPokemonListViewController.m */,
+				54590F82E1101AE173937E0B /* MyPokemonListViewController.h */,
 			);
 			path = MyPokemon;
 			sourceTree = "<group>";
@@ -597,6 +602,7 @@
 				54590796CEA830065BB53123 /* AddCell.m in Sources */,
 				54590E43B3548E1E550F434D /* AddPokemonViewController.m in Sources */,
 				54590D40E09C7E8B7A46C10B /* MyPokemonStore.m in Sources */,
+				545902F1C5071B429197395F /* MyPokemonListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -137,16 +137,22 @@
                                 <action selector="revealSidebar:" destination="IzE-FG-9Ag" id="ZYt-mk-Qoq"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Delete" id="azT-mY-Pzd">
+                            <connections>
+                                <action selector="deleteButtonTapped:" destination="IzE-FG-9Ag" id="npV-oy-EfV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="deleteButton" destination="azT-mY-Pzd" id="TCP-9T-guN"/>
                         <segue destination="rBF-kj-32h" kind="push" identifier="selectMyPokemon" id="fus-7C-2Gc"/>
                         <segue destination="z4j-ZJ-41j" kind="push" identifier="typesForMyPokemon" id="D8F-6d-RCt"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXi-83-upg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1325" y="-587"/>
+            <point key="canvasLocation" x="1325" y="-601"/>
         </scene>
         <!--Pokemon Type View Controller - Charizard-->
         <scene sceneID="xmZ-T5-qxp">
@@ -181,7 +187,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TaX-N4-GGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2099" y="-587"/>
+            <point key="canvasLocation" x="2099" y="-601"/>
         </scene>
         <!--Add Pokemon View Controller - Add-->
         <scene sceneID="0iK-uC-Mqz">
@@ -218,7 +224,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ak-ne-ldn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1713" y="-587"/>
+            <point key="canvasLocation" x="1713" y="-601"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MVJ-ct-yRH">
@@ -554,7 +560,13 @@
                             <outlet property="delegate" destination="CIK-xT-erL" id="idg-4s-Kte"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Compare To" id="ERt-7Q-K01"/>
+                    <navigationItem key="navigationItem" title="Compare To" id="ERt-7Q-K01">
+                        <barButtonItem key="rightBarButtonItem" title="Mine" id="07m-Tz-a8C">
+                            <connections>
+                                <segue destination="bxS-Pf-aVA" kind="push" id="00c-mo-kTd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="QL9-lh-DX6" id="qnz-Jz-Vjn"/>
                     </connections>
@@ -562,6 +574,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eN9-KZ-a60" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1713" y="45"/>
+        </scene>
+        <!--My Pokemon List View Controller - My Pokemon-->
+        <scene sceneID="ELN-MP-zTb">
+            <objects>
+                <tableViewController id="bxS-Pf-aVA" customClass="MyPokemonListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6Ah-rg-1s1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7Q5-6w-xgZ">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Q5-6w-xgZ" id="26X-ux-PWn">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bxS-Pf-aVA" id="IYu-CS-EvM"/>
+                            <outlet property="delegate" destination="bxS-Pf-aVA" id="MET-5Q-VO5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Pokemon" id="Fti-Uc-FhK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8j-qV-pds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2099" y="45"/>
         </scene>
     </scenes>
     <resources>

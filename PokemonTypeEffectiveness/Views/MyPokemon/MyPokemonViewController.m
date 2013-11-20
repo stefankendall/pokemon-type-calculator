@@ -79,6 +79,17 @@ const int ADD_SECTION = 1;
     }
 }
 
+- (IBAction)deleteButtonTapped:(id)sender {
+    if ([self.tableView isEditing]) {
+        [self.tableView setEditing:NO];
+        [self.deleteButton setTitle:@"Delete"];
+    }
+    else {
+        [self.tableView setEditing:YES];
+        [self.deleteButton setTitle:@"Done"];
+    }
+}
+
 - (IBAction)revealSidebar:(id)sender {
     [self.viewDeckController toggleLeftViewAnimated:YES];
 }
