@@ -18,6 +18,10 @@
     }
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     if (self.mega) {
         self.tappedPokemonName = self.mega;

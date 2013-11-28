@@ -6,8 +6,7 @@
 #import "TypeEffectivenessCell.h"
 #import "TypeCalculator.h"
 #import "StatsViewController.h"
-
-const int INFO_SECTION = 0;
+#import "AdCell.h"
 
 @implementation PokemonTypeViewController
 
@@ -22,8 +21,9 @@ const int INFO_SECTION = 0;
 
 
     }
-}
 
+    self.showingAds = YES;
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     StatsViewController *statsController = [segue destinationViewController];
@@ -35,28 +35,32 @@ const int INFO_SECTION = 0;
     int SUPER_EFFECTIVE_SECTION_COUNT = [[self superEffectiveTypes] count] > 0 ? 1 : 0;
     int IMMUNE_SECTION_COUNT = [[self immuneTypes] count] > 0 ? 1 : 0;
     int NOT_EFFECTIVE_COUNT = [[self notEffectiveTypes] count] > 0 ? 1 : 0;
-    return INFO_SECTION_COUNT + SUPER_EFFECTIVE_SECTION_COUNT + IMMUNE_SECTION_COUNT + NOT_EFFECTIVE_COUNT;
+    return INFO_SECTION_COUNT + SUPER_EFFECTIVE_SECTION_COUNT + IMMUNE_SECTION_COUNT + NOT_EFFECTIVE_COUNT + (self.showingAds ? 1 : 0);
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (section == INFO_SECTION) {
-        return @"";
-    }
-    else if (section == [self superEffectiveSection]) {
+    if (section == [self superEffectiveSection]) {
         return @"Super Effective";
     }
     else if (section == [self notEffectiveSection]) {
         return @"Not Effective";
-    } else {
+    } else if (section == [self immuneSection]) {
         return @"Immune";
     }
+    else {
+        return @"";
+    }
+}
+
+- (NSInteger)infoSection {
+    return self.showingAds ? 1 : 0;
 }
 
 - (NSInteger)superEffectiveSection {
     if ([[self superEffectiveTypes] count] == 0) {
         return -1;
     }
-    return 1;
+    return [self infoSection] + 1;
 }
 
 - (NSInteger)immuneSection {
@@ -64,7 +68,7 @@ const int INFO_SECTION = 0;
         return -1;
     }
 
-    int section = 1;
+    int section = [self infoSection] + 1;
     if ([self superEffectiveSection] > 0) {
         section++;
     }
@@ -76,7 +80,7 @@ const int INFO_SECTION = 0;
         return -1;
     }
 
-    int section = 1;
+    int section = [self infoSection] + 1;
     if ([self superEffectiveSection] > 0) {
         section++;
     }
@@ -88,22 +92,22 @@ const int INFO_SECTION = 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == INFO_SECTION) {
-        return 1;
-    }
-    else if (section == [self superEffectiveSection]) {
+    if (section == [self superEffectiveSection]) {
         return [[self superEffectiveTypes] count];
     }
     else if (section == [self notEffectiveSection]) {
         return [[self notEffectiveTypes] count];
     }
-    else {
+    else if (section == [self immuneSection]) {
         return [[self immuneTypes] count];
+    }
+    else {
+        return 1;
     }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([indexPath section] == INFO_SECTION) {
+    if ([indexPath section] == [self infoSection]) {
         NSArray *megas = [[PokemonStore instance] megasFor:self.pokemon];
         if ([megas count] == 0 || self.hidesMega) {
             InfoCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(InfoCell.class)];
@@ -127,6 +131,14 @@ const int INFO_SECTION = 0;
             return cell;
         }
     }
+    else if (indexPath.section == [self adSection]) {
+        AdCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(AdCell.class)];
+        if (!cell) {
+            cell = [AdCell create];
+        }
+        [cell.adView setDelegate:self];
+        return cell;
+    }
     else {
         TypeEffectivenessCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(TypeEffectivenessCell.class)];
         if (!cell) {
@@ -147,6 +159,10 @@ const int INFO_SECTION = 0;
         [cell setType:type withMultipler:effectiveness[type]];
         return cell;
     }
+}
+
+- (NSInteger)adSection {
+    return self.showingAds ? 0 : -1;
 }
 
 - (void)mega1Tapped {
@@ -205,6 +221,14 @@ const int INFO_SECTION = 0;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
     return cell.frame.size.height;
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+    self.showingAds = NO;
+    [self.tableView reloadData];
 }
 
 @end
