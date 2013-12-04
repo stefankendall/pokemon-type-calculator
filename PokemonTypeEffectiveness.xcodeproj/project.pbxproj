@@ -23,6 +23,7 @@
 		0275E4561814BF5300D8F421 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 0275E4551814BF5300D8F421 /* pokemon.json */; };
 		54590013F6879F4F3225CEED /* ComparePokemonHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590787E12C8625BB2CEEFA /* ComparePokemonHeader.xib */; };
 		545900264B79DF065C45BB72 /* PokemonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */; };
+		5459002BD5B556C7F8261A37 /* AdStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459025D255286CE1EBABF44 /* AdStore.m */; };
 		545900A08D0B122D15DFEF51 /* PokemonTypeViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459044846D48B1A9B336B1A /* PokemonTypeViewControllerTests.m */; };
 		545901511E0E6BD35C828D97 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F964A9E1C7FE5FA5EAA /* TipViewController.m */; };
 		545901740158B49EBB2BB8AF /* PokemonNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CB37EC96B400CB92CF2 /* PokemonNavViewController.m */; };
@@ -107,6 +108,7 @@
 		545901EA628FBB831E432178 /* SKProductStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKProductStore.m; sourceTree = "<group>"; };
 		54590203D44A6149D468FF0E /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		54590210B96ED6AD3190D4F9 /* MyPokemonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPokemonStore.h; sourceTree = "<group>"; };
+		5459025D255286CE1EBABF44 /* AdStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdStore.m; sourceTree = "<group>"; };
 		54590264EB6F876127D839D6 /* TypeCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeCalculatorTests.m; sourceTree = "<group>"; };
 		545902737DEE083CAD3A8D39 /* InfoCellWithMega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellWithMega.h; sourceTree = "<group>"; };
 		545902788B91AB8B66894EA1 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		545906BC47E3D0B153D22520 /* PokemonViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonViewDeckController.h; sourceTree = "<group>"; };
 		54590731E990B6FD7A8E609D /* TypeEffectivenessCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeEffectivenessCell.h; sourceTree = "<group>"; };
 		54590749E265C6FDA7F71885 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		5459076ED87908CAF5E3C083 /* AdStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdStore.h; sourceTree = "<group>"; };
 		54590787E12C8625BB2CEEFA /* ComparePokemonHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComparePokemonHeader.xib; sourceTree = "<group>"; };
 		5459082DFA0E163A7CE5A7B3 /* MyPokemonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPokemonStore.m; sourceTree = "<group>"; };
 		54590831D4EE73EC741FA609 /* StatsViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewControllerTests.h; sourceTree = "<group>"; };
@@ -434,6 +437,8 @@
 				545901EA628FBB831E432178 /* SKProductStore.m */,
 				5459082DFA0E163A7CE5A7B3 /* MyPokemonStore.m */,
 				54590210B96ED6AD3190D4F9 /* MyPokemonStore.h */,
+				5459025D255286CE1EBABF44 /* AdStore.m */,
+				5459076ED87908CAF5E3C083 /* AdStore.h */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -617,6 +622,7 @@
 				54590D40E09C7E8B7A46C10B /* MyPokemonStore.m in Sources */,
 				545902F1C5071B429197395F /* MyPokemonListViewController.m in Sources */,
 				54590B1A9A96B3CC054AA3BA /* AdCell.m in Sources */,
+				5459002BD5B556C7F8261A37 /* AdStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

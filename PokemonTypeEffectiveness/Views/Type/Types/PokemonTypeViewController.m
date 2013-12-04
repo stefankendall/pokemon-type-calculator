@@ -7,6 +7,7 @@
 #import "TypeCalculator.h"
 #import "StatsViewController.h"
 #import "AdCell.h"
+#import "AdStore.h"
 
 @implementation PokemonTypeViewController
 
@@ -21,8 +22,6 @@
 
 
     }
-
-    self.showingAds = YES;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -35,7 +34,8 @@
     int SUPER_EFFECTIVE_SECTION_COUNT = [[self superEffectiveTypes] count] > 0 ? 1 : 0;
     int IMMUNE_SECTION_COUNT = [[self immuneTypes] count] > 0 ? 1 : 0;
     int NOT_EFFECTIVE_COUNT = [[self notEffectiveTypes] count] > 0 ? 1 : 0;
-    return INFO_SECTION_COUNT + SUPER_EFFECTIVE_SECTION_COUNT + IMMUNE_SECTION_COUNT + NOT_EFFECTIVE_COUNT + (self.showingAds ? 1 : 0);
+    return INFO_SECTION_COUNT + SUPER_EFFECTIVE_SECTION_COUNT + IMMUNE_SECTION_COUNT + NOT_EFFECTIVE_COUNT +
+            ([[AdStore instance] adsEnabled] ? 1 : 0);
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -53,7 +53,7 @@
 }
 
 - (NSInteger)infoSection {
-    return self.showingAds ? 1 : 0;
+    return [[AdStore instance] adsEnabled] ? 1 : 0;
 }
 
 - (NSInteger)superEffectiveSection {
@@ -162,7 +162,7 @@
 }
 
 - (NSInteger)adSection {
-    return self.showingAds ? 0 : -1;
+    return [[AdStore instance] adsEnabled] ? 0 : -1;
 }
 
 - (void)mega1Tapped {
@@ -227,7 +227,7 @@
 }
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
-    self.showingAds = NO;
+    [[AdStore instance] setAdsEnabled:NO];
     [self.tableView reloadData];
 }
 

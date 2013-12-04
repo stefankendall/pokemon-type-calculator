@@ -10,8 +10,6 @@
 
 @property(nonatomic) BOOL hidesMega;
 
-@property(nonatomic) BOOL showingAds;
-
 - (NSInteger)superEffectiveSection;
 
 - (NSInteger)immuneSection;
