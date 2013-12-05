@@ -45,6 +45,7 @@
 		54590916BFC4DCCE059848EC /* MyPokemonStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A0F8EAF239343FF677A /* MyPokemonStoreTests.m */; };
 		54590949E95F5601DB5AC460 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545903F00B45F546A4EDA019 /* InfoCell.xib */; };
 		54590959BAAE8495B14E1232 /* PokemonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A96C2BBBF828BED72F5 /* PokemonStore.m */; };
+		5459098DD9E8FCFCEBA050D0 /* 09-chat-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545908D0C21C0C3385BE407E /* 09-chat-2@2x.png */; };
 		545909E8A028C8D9258ADC30 /* PokemonStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459088463E7F731AF419B5D /* PokemonStoreTests.m */; };
 		54590A22F785C98B24D5144C /* PokemonTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A9B04D54EF541D45CF8 /* PokemonTypeViewController.m */; };
 		54590A73B21EEE8BEF19F502 /* StatsCompareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CF21BEB3BFDA582A301 /* StatsCompareCell.m */; };
@@ -56,12 +57,14 @@
 		54590C8E7D112339895BE1B3 /* ButtonMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545902F3C682DB143687CF2B /* ButtonMenu@2x.png */; };
 		54590CCCD0423642D1AAF51E /* ComparePokemonHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459048CF2A27B775B417077 /* ComparePokemonHeader.m */; };
 		54590D27A8D3539F45C29766 /* ButtonMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590CA599824E9A2F0A539B /* ButtonMenu.png */; };
+		54590D39B53D9B7F88138D11 /* Mailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A90889DEA9611AF6BBD /* Mailer.m */; };
 		54590D40E09C7E8B7A46C10B /* MyPokemonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459082DFA0E163A7CE5A7B3 /* MyPokemonStore.m */; };
 		54590D71F74A3F2B1F6342CB /* TypeCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590264EB6F876127D839D6 /* TypeCalculatorTests.m */; };
 		54590D7693D546651C0F50E2 /* InfoCellWithMega.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590412E18210E245EE73F8 /* InfoCellWithMega.m */; };
 		54590D951EBAB939E6753ECF /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459045542C547D7330C5AC6 /* 06-magnify.png */; };
 		54590DAA40C9E392F3C6521D /* StatsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EA689B7DC077B563A9C /* StatsViewControllerTests.m */; };
 		54590DD8A93FE863958687EA /* StatsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590D17DDF91959618CAC1E /* StatsCell.xib */; };
+		54590E394F837111A0B1E507 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590FD720673C74A488F6A9 /* 09-chat-2.png */; };
 		54590E43B3548E1E550F434D /* AddPokemonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590AEF26A02E8356914478 /* AddPokemonViewController.m */; };
 		54590EA84F85D4CC024B10F6 /* TypeEffectivenessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545908F09046E0E7B3AFCC30 /* TypeEffectivenessCell.xib */; };
 		54590EC67F12A8AF84E5B686 /* 15-tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 545903CAE5175FDF7B676A5B /* 15-tags.png */; };
@@ -133,6 +136,7 @@
 		545904A9AC326189E2C3D8A7 /* InfoCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCellTests.m; sourceTree = "<group>"; };
 		5459050E264405DB50258F7A /* PokemonNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonNavViewController.h; sourceTree = "<group>"; };
 		5459056198DE1C35C838020F /* TypeEffectivenessCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeEffectivenessCell.m; sourceTree = "<group>"; };
+		54590584D7D8BDE9DA989103 /* Mailer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mailer.h; sourceTree = "<group>"; };
 		545905A43663D966214D0B99 /* AdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
 		545905EC2C447760E760F51B /* ComparePokemonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComparePokemonHeader.h; sourceTree = "<group>"; };
 		54590679373F4BBF9D7432A1 /* InfoCellWithMega.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCellWithMega.xib; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 		5459082DFA0E163A7CE5A7B3 /* MyPokemonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPokemonStore.m; sourceTree = "<group>"; };
 		54590831D4EE73EC741FA609 /* StatsViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewControllerTests.h; sourceTree = "<group>"; };
 		5459088463E7F731AF419B5D /* PokemonStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonStoreTests.m; sourceTree = "<group>"; };
+		545908D0C21C0C3385BE407E /* 09-chat-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2@2x.png"; sourceTree = "<group>"; };
 		545908E076C3C6BDB28108DE /* StatsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsCell.m; sourceTree = "<group>"; };
 		545908F09046E0E7B3AFCC30 /* TypeEffectivenessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeEffectivenessCell.xib; sourceTree = "<group>"; };
 		545909A9B4FB36E9A29349FC /* MyPokemonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPokemonViewController.m; sourceTree = "<group>"; };
@@ -153,6 +158,7 @@
 		545909F752E01FF98C207B66 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		54590A057FE8C16E7412F646 /* AddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCell.m; sourceTree = "<group>"; };
 		54590A0F8EAF239343FF677A /* MyPokemonStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPokemonStoreTests.m; sourceTree = "<group>"; };
+		54590A90889DEA9611AF6BBD /* Mailer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mailer.m; sourceTree = "<group>"; };
 		54590A96C2BBBF828BED72F5 /* PokemonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonStore.m; sourceTree = "<group>"; };
 		54590A9B04D54EF541D45CF8 /* PokemonTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTypeViewController.m; sourceTree = "<group>"; };
 		54590ADCEC7E20E1C3738304 /* MyPokemonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPokemonViewController.h; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 		54590F82E1101AE173937E0B /* MyPokemonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPokemonListViewController.h; sourceTree = "<group>"; };
 		54590F964A9E1C7FE5FA5EAA /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		54590FB10C7E24D845C777F3 /* PokemonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonStore.h; sourceTree = "<group>"; };
+		54590FD720673C74A488F6A9 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
 		9DFA38C800B34C7798047A63 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -258,6 +265,7 @@
 				54590FFA08E467EE1D11861E /* Store */,
 				54590F9D1A70F8857E530345 /* Views */,
 				54590A72973AAC05FE120859 /* Images */,
+				5459054A5B9740D262A35C22 /* Util */,
 			);
 			path = PokemonTypeEffectiveness;
 			sourceTree = "<group>";
@@ -348,6 +356,15 @@
 			path = Type;
 			sourceTree = "<group>";
 		};
+		5459054A5B9740D262A35C22 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				54590A90889DEA9611AF6BBD /* Mailer.m */,
+				54590584D7D8BDE9DA989103 /* Mailer.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		5459095EAA92658497C38D03 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +403,8 @@
 				54590F3A14D6FB741C199994 /* 06-magnify@2x.png */,
 				545903CAE5175FDF7B676A5B /* 15-tags.png */,
 				545901A84F0C7782483FF7EE /* 15-tags@2x.png */,
+				545908D0C21C0C3385BE407E /* 09-chat-2@2x.png */,
+				54590FD720673C74A488F6A9 /* 09-chat-2.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -549,6 +568,8 @@
 				54590C58F688860A869BD4B0 /* 15-tags@2x.png in Resources */,
 				545904DFFD05ED2F3A401142 /* AddCell.xib in Resources */,
 				545905BF47DD76FA1D1B1706 /* AdCell.xib in Resources */,
+				5459098DD9E8FCFCEBA050D0 /* 09-chat-2@2x.png in Resources */,
+				54590E394F837111A0B1E507 /* 09-chat-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +644,7 @@
 				545902F1C5071B429197395F /* MyPokemonListViewController.m in Sources */,
 				54590B1A9A96B3CC054AA3BA /* AdCell.m in Sources */,
 				5459002BD5B556C7F8261A37 /* AdStore.m in Sources */,
+				54590D39B53D9B7F88138D11 /* Mailer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,6 @@
 #import <ViewDeck/IIViewDeckController.h>
 #import "PokemonNavViewController.h"
+#import "Mailer.h"
 
 @implementation PokemonNavViewController
 
@@ -19,9 +20,22 @@
             @1 : @"myPokemonNav"
     };
 
-    NSString *storyboardId = rowMapping[[NSNumber numberWithInt:[indexPath row]]];
-    [self.viewDeckController setCenterController:[storyboard instantiateViewControllerWithIdentifier:storyboardId]];
-    [self.viewDeckController closeLeftViewAnimated:YES];
+    if (indexPath.row == 2) {
+        [self presentFeedbackEmail];
+    }
+    else {
+        NSString *storyboardId = rowMapping[[NSNumber numberWithInt:[indexPath row]]];
+        [self.viewDeckController setCenterController:[storyboard instantiateViewControllerWithIdentifier:storyboardId]];
+        [self.viewDeckController closeLeftViewAnimated:YES];
+    }
+}
+
+- (void)presentFeedbackEmail {
+    [[[Mailer alloc] initWithSender:self] presentFeedback];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    [controller dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
