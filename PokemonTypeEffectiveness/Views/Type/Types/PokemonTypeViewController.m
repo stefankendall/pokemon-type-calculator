@@ -227,7 +227,7 @@
 }
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
-    [[AdStore instance] setAdsEnabled:NO];
+    [[AdStore instance] disableAds];
     [self.tableView reloadData];
 }
 

@@ -1,0 +1,2 @@
+@interface AdStoreTests : XCTestCase
+@end

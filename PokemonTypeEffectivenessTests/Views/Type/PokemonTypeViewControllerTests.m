@@ -13,15 +13,15 @@
 - (void)testHasSectionsForSuperNotEffectiveAndImmune {
     PokemonTypeViewController *datasource = (PokemonTypeViewController *) [TestHelper controllerForId: @"matchups"];
     [datasource setPokemon:@"Charizard"];
-    XCTAssertEqual([datasource numberOfSectionsInTableView:nil], (NSInteger) 4);
-    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:1], @"Super Effective");
-    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:2], @"Immune");
-    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:3], @"Not Effective");
+    XCTAssertEqual([datasource numberOfSectionsInTableView:nil], (NSInteger) 5);
+    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:2], @"Super Effective");
+    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:3], @"Immune");
+    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:4], @"Not Effective");
 
     [datasource setPokemon:@"Ditto"];
-    XCTAssertEqual([datasource numberOfSectionsInTableView:nil], (NSInteger) 3);
-    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:1], @"Super Effective");
-    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:2], @"Immune");
+    XCTAssertEqual([datasource numberOfSectionsInTableView:nil], (NSInteger) 4);
+    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:2], @"Super Effective");
+    XCTAssertEqualObjects([datasource tableView:nil titleForHeaderInSection:3], @"Immune");
 }
 
 - (void)testSuperEffectiveTypes {
@@ -75,7 +75,7 @@
     XCTAssertFalse([cell isKindOfClass:InfoCellWithMega.class]);
 
     [datasource setPokemon:@"Charizard"];
-    cell = [datasource tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    cell = [datasource tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
     XCTAssertTrue([cell isKindOfClass:InfoCellWithMega.class]);
 }
 

@@ -51,6 +51,7 @@
 		54590A73B21EEE8BEF19F502 /* StatsCompareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CF21BEB3BFDA582A301 /* StatsCompareCell.m */; };
 		54590A9FE94983E50728DA86 /* InfoCellWithMega.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590679373F4BBF9D7432A1 /* InfoCellWithMega.xib */; };
 		54590B1A9A96B3CC054AA3BA /* AdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906801D505AD366B6A6CF /* AdCell.m */; };
+		54590B420E11121D91721B06 /* AdStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545900FDFC397E8553D71D5E /* AdStoreTests.m */; };
 		54590B668174E464D9C21339 /* StatsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908E076C3C6BDB28108DE /* StatsCell.m */; };
 		54590BA74F43B52291221935 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5459031748C1BAA007785097 /* QuartzCore.framework */; };
 		54590C58F688860A869BD4B0 /* 15-tags@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545901A84F0C7782483FF7EE /* 15-tags@2x.png */; };
@@ -106,6 +107,7 @@
 		22E03E531D714C5285B1606F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		545900D894F9A70A53375126 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
 		545900FDEA155C2658DA1C4E /* AddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCell.h; sourceTree = "<group>"; };
+		545900FDFC397E8553D71D5E /* AdStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdStoreTests.m; sourceTree = "<group>"; };
 		545901A64ED3068909369AF4 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
 		545901A84F0C7782483FF7EE /* 15-tags@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-tags@2x.png"; sourceTree = "<group>"; };
 		545901EA628FBB831E432178 /* SKProductStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKProductStore.m; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		545902788B91AB8B66894EA1 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		5459029D9F65EEFC2FCA827F /* PokemonStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonStoreTests.h; sourceTree = "<group>"; };
 		545902D7C447FFEA28D6793F /* CompareProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareProtocol.h; sourceTree = "<group>"; };
+		545902D7CBADE83B1C650261 /* AdStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdStoreTests.h; sourceTree = "<group>"; };
 		545902E51CADE28BABD5E81F /* StatsCompareCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsCompareCell.xib; sourceTree = "<group>"; };
 		545902EA93F6EE3C83207F23 /* CompareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareViewController.h; sourceTree = "<group>"; };
 		545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonListViewController.m; sourceTree = "<group>"; };
@@ -339,6 +342,8 @@
 				545906A812AA6DEB7859BDC5 /* TypeCalculatorTests.h */,
 				54590A0F8EAF239343FF677A /* MyPokemonStoreTests.m */,
 				54590C7EFFF7B3B6E10E57A5 /* MyPokemonStoreTests.h */,
+				545900FDFC397E8553D71D5E /* AdStoreTests.m */,
+				545902D7CBADE83B1C650261 /* AdStoreTests.h */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -659,6 +664,7 @@
 				54590489179B838898B9AD6A /* TestHelper.m in Sources */,
 				54590DAA40C9E392F3C6521D /* StatsViewControllerTests.m in Sources */,
 				54590916BFC4DCCE059848EC /* MyPokemonStoreTests.m in Sources */,
+				54590B420E11121D91721B06 /* AdStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

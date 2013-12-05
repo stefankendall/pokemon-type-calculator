@@ -2,10 +2,15 @@
 
 @implementation AdStore
 
+- (void)reset {
+    [[NSUbiquitousKeyValueStore defaultStore] removeObjectForKey:@"adsDisabled"];
+    [self init];
+}
+
 - (id)init {
     self = [super init];
     if (self) {
-        self.adsEnabled = YES;
+        self.adsEnabled = ![[NSUbiquitousKeyValueStore defaultStore] boolForKey:@"adsDisabled"];
     }
 
     return self;
@@ -20,6 +25,15 @@
     });
 
     return store;
+}
+
+- (void)disableAds {
+    self.adsEnabled = NO;
+}
+
+- (void)disableAdsForever {
+    [[NSUbiquitousKeyValueStore defaultStore] setBool:YES forKey:@"adsDisabled"];
+    [self init];
 }
 
 @end
