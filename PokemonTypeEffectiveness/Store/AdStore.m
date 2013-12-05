@@ -5,7 +5,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.adsEnabled = NO;
+        self.adsEnabled = YES;
     }
 
     return self;
