@@ -1,6 +1,7 @@
 #import <IAPManager/IAPManager.h>
 #import "TipViewController.h"
 #import "SKProductStore.h"
+#import "AdStore.h"
 
 @implementation TipViewController
 
@@ -18,11 +19,16 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if([indexPath section] != 1){
+        return;
+    }
+
     int tipLevel = [indexPath row] + 1;
     NSString *tip = [NSString stringWithFormat:@"tip%d", tipLevel];
     if ([[SKProductStore instance] isLoaded]) {
         [[IAPManager sharedIAPManager] purchaseProductForId:tip completion:^(SKPaymentTransaction *transaction) {
             [self thanksMessage];
+            [[AdStore instance] disableAdsForever];
         }                                             error:^(NSError *error) {
             [self errorMessage];
         }];
