@@ -62,6 +62,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.tappedPokemonName = self.pokemonNames[(NSUInteger) [indexPath row]];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self performSegueWithIdentifier:@"showTypeMatchup" sender:self];
 }
 
