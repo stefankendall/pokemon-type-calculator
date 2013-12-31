@@ -528,7 +528,7 @@
 						};
 					};
 					020C511B18131D20005CA791 = {
-						TestTargetID = 020C510018131D20005CA791 /* PokemonTypeEffectiveness */;
+						TestTargetID = 020C510018131D20005CA791;
 					};
 				};
 			};
