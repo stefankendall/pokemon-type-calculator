@@ -1,9 +1,6 @@
-#import <iAd/iAd.h>
 #import "MegaTransitionDelegate.h"
 
-@class ADBannerView;
-
-@interface PokemonListViewController : UITableViewController <UISearchBarDelegate, MegaTransitionDelegate, ADBannerViewDelegate> {
+@interface PokemonListViewController : UITableViewController <UISearchBarDelegate, MegaTransitionDelegate> {
 }
 @property(weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property(nonatomic, strong) NSString *mega;

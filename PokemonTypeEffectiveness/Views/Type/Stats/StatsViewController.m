@@ -8,6 +8,7 @@
 @implementation StatsViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     self.statOrder = @[@"hp", @"attack", @"defense", @"special_attack", @"special_defense", @"speed"];
     self.statLabels = @{
             @"hp" : @"HP",

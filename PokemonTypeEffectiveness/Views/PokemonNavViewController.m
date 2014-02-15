@@ -5,6 +5,7 @@
 @implementation PokemonNavViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         [self.tableView setContentInset:UIEdgeInsetsMake(20,
                 self.tableView.contentInset.left,
