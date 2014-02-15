@@ -37,6 +37,7 @@
 		54590489179B838898B9AD6A /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902788B91AB8B66894EA1 /* TestHelper.m */; };
 		545904CA7C91ACA87FF524DB /* StatsCompareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545902E51CADE28BABD5E81F /* StatsCompareCell.xib */; };
 		545904DFFD05ED2F3A401142 /* AddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5459041305297148E7210526 /* AddCell.xib */; };
+		5459058251D8D9493DB60F89 /* PKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901B0536C7FDD1AFFEFFA /* PKTableViewController.m */; };
 		545905F84B35A64BA4BE53C2 /* TypeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B9AF4FDC44878BFBD98 /* TypeCalculator.m */; };
 		545905F9BBD5C9D01A913F92 /* InfoCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545904A9AC326189E2C3D8A7 /* InfoCellTests.m */; };
 		54590796CEA830065BB53123 /* AddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A057FE8C16E7412F646 /* AddCell.m */; };
@@ -108,6 +109,7 @@
 		545900FDFC397E8553D71D5E /* AdStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdStoreTests.m; sourceTree = "<group>"; };
 		545901A64ED3068909369AF4 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
 		545901A84F0C7782483FF7EE /* 15-tags@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-tags@2x.png"; sourceTree = "<group>"; };
+		545901B0536C7FDD1AFFEFFA /* PKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTableViewController.m; sourceTree = "<group>"; };
 		545901EA628FBB831E432178 /* SKProductStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKProductStore.m; sourceTree = "<group>"; };
 		54590203D44A6149D468FF0E /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		54590210B96ED6AD3190D4F9 /* MyPokemonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPokemonStore.h; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		54590A9B04D54EF541D45CF8 /* PokemonTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTypeViewController.m; sourceTree = "<group>"; };
 		54590ADCEC7E20E1C3738304 /* MyPokemonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPokemonViewController.h; sourceTree = "<group>"; };
 		54590AEF26A02E8356914478 /* AddPokemonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPokemonViewController.m; sourceTree = "<group>"; };
+		54590B48FB9F52C65BA54ED4 /* PKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTableViewController.h; sourceTree = "<group>"; };
 		54590B9AF4FDC44878BFBD98 /* TypeCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeCalculator.m; sourceTree = "<group>"; };
 		54590BFA55197566F3ACF94B /* InfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCell.h; sourceTree = "<group>"; };
 		54590C1143E8B71B14131549 /* MegaTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MegaTransitionDelegate.h; sourceTree = "<group>"; };
@@ -438,6 +441,8 @@
 				54590CB37EC96B400CB92CF2 /* PokemonNavViewController.m */,
 				5459050E264405DB50258F7A /* PokemonNavViewController.h */,
 				54590A825B3F9F5A600FBA75 /* MyPokemon */,
+				545901B0536C7FDD1AFFEFFA /* PKTableViewController.m */,
+				54590B48FB9F52C65BA54ED4 /* PKTableViewController.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -640,6 +645,7 @@
 				545902F1C5071B429197395F /* MyPokemonListViewController.m in Sources */,
 				5459002BD5B556C7F8261A37 /* AdStore.m in Sources */,
 				54590D39B53D9B7F88138D11 /* Mailer.m in Sources */,
+				5459058251D8D9493DB60F89 /* PKTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

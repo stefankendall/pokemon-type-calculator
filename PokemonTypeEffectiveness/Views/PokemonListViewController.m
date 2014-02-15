@@ -11,6 +11,7 @@
 @implementation PokemonListViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     [self.searchBar setDelegate:self];
 
     if ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0) {

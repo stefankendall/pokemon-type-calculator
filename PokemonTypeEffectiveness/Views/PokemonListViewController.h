@@ -1,6 +1,7 @@
 #import "MegaTransitionDelegate.h"
+#import "PKTableViewController.h"
 
-@interface PokemonListViewController : UITableViewController <UISearchBarDelegate, MegaTransitionDelegate> {
+@interface PokemonListViewController : PKTableViewController <UISearchBarDelegate, MegaTransitionDelegate> {
 }
 @property(weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property(nonatomic, strong) NSString *mega;

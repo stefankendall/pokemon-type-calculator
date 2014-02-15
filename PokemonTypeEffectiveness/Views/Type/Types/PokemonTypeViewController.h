@@ -1,8 +1,9 @@
 #import "MegaTransitionDelegate.h"
+#import "PKTableViewController.h"
 
 @class PokemonListViewController;
 
-@interface PokemonTypeViewController : UITableViewController
+@interface PokemonTypeViewController : PKTableViewController
 @property(nonatomic, copy) NSString *pokemon;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *statsButton;
 @property(nonatomic, strong) PokemonListViewController *listViewController;
