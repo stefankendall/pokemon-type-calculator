@@ -33,7 +33,7 @@
 
 - (void)disableAdsForever {
     [[NSUbiquitousKeyValueStore defaultStore] setBool:YES forKey:@"adsDisabled"];
-    [self init];
+    self.adsEnabled = NO;
 }
 
 @end

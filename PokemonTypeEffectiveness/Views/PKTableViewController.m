@@ -6,9 +6,10 @@
 
 - (void)viewDidLoad {
     if ([self respondsToSelector:@selector(canDisplayBannerAds)]) {
-        self.canDisplayBannerAds = [[AdStore instance] adsEnabled];
+        if ([[AdStore instance] adsEnabled]) {
+            self.canDisplayBannerAds = YES;
+        }
     }
 }
-
 
 @end
