@@ -447,7 +447,22 @@
                             <outlet property="delegate" destination="SYg-6n-OeN" id="0Qn-9z-Rmh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Leave a tip?" id="1bC-KJ-l9a"/>
+                    <navigationItem key="navigationItem" title="Leave a tip?" id="1bC-KJ-l9a">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="lol-Ax-16j">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jmg-KS-Kue">
+                                <rect key="frame" x="233" y="5" width="71" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Unlock">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="secretUnlock:" destination="SYg-6n-OeN" eventType="touchUpInside" id="7qR-7z-dqR"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0E9-72-y4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,7 +19,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if([indexPath section] != 1){
+    if ([indexPath section] != 1) {
         return;
     }
 
@@ -42,6 +42,12 @@
 
 - (void)errorMessage {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@":(" message:@"Something went wrong trying to reach the store" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+- (IBAction)secretUnlock:(id)sender {
+    [[AdStore instance] disableAdsForever];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Secrets" message:@"Ads disabled." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
 }
 
