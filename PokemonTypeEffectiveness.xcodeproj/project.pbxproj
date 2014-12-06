@@ -20,7 +20,6 @@
 		020C512818131D20005CA791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 020C512618131D20005CA791 /* InfoPlist.strings */; };
 		020C513418131E05005CA791 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020C513318131E05005CA791 /* Storyboard.storyboard */; };
 		0255078B18140D41003B4CD6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0255078A18140D41003B4CD6 /* StoreKit.framework */; };
-		0275E4561814BF5300D8F421 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 0275E4551814BF5300D8F421 /* pokemon.json */; };
 		54590013F6879F4F3225CEED /* ComparePokemonHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590787E12C8625BB2CEEFA /* ComparePokemonHeader.xib */; };
 		545900264B79DF065C45BB72 /* PokemonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902F2BF61369A2D8C2AA5 /* PokemonListViewController.m */; };
 		5459002BD5B556C7F8261A37 /* AdStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459025D255286CE1EBABF44 /* AdStore.m */; };
@@ -102,7 +101,6 @@
 		020C512718131D20005CA791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		020C513318131E05005CA791 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		0255078A18140D41003B4CD6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		0275E4551814BF5300D8F421 /* pokemon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemon.json; sourceTree = "<group>"; };
 		22E03E531D714C5285B1606F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		545900D894F9A70A53375126 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
 		545900FDEA155C2658DA1C4E /* AddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCell.h; sourceTree = "<group>"; };
@@ -257,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				0201624218397521006A93DB /* Quick Attack.entitlements */,
-				0275E4551814BF5300D8F421 /* pokemon.json */,
 				020C511318131D20005CA791 /* AppDelegate.h */,
 				020C511418131D20005CA791 /* AppDelegate.m */,
 				020C511618131D20005CA791 /* Images.xcassets */,
@@ -553,7 +550,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				020C510F18131D20005CA791 /* InfoPlist.strings in Resources */,
-				0275E4561814BF5300D8F421 /* pokemon.json in Resources */,
 				020C511718131D20005CA791 /* Images.xcassets in Resources */,
 				020C513418131E05005CA791 /* Storyboard.storyboard in Resources */,
 				54590EA84F85D4CC024B10F6 /* TypeEffectivenessCell.xib in Resources */,
@@ -778,7 +774,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "PokemonTypeEffectiveness/Quick Attack.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -806,7 +802,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "PokemonTypeEffectiveness/Quick Attack.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
